@@ -40,7 +40,7 @@
     "@babel/preset-typescript": "^7.18.6",
     "@embroider/addon-dev": "^1.8.3",
     "@gossi/config-eslint": "^0.0.1",
-    "@gossi/config-prettier": "^0.0.1",
+    "@gossi/config-prettier": "^0.1.0",
     "@gossi/config-targets": "^0.0.1",
     "@types/ember__owner": "^4.0.0",
     "@types/ember__service": "^4.0.0",
