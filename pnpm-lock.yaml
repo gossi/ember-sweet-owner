@@ -71,7 +71,7 @@ importers:
       '@gossi/config-eslint': ^0.0.1
       '@gossi/config-prettier': ^0.0.1
       '@gossi/config-targets': ^0.0.1
-      '@gossi/config-template-lint': ^0.0.1
+      '@gossi/config-template-lint': ^0.1.0
       '@types/ember': ^4.0.0
       '@types/ember-qunit': ^5.0.0
       '@types/ember-resolver': ^5.0.11
@@ -134,7 +134,7 @@ importers:
       '@gossi/config-eslint': 0.0.1_swk2g7ygmfleszo5c33j4vooni
       '@gossi/config-prettier': 0.0.1_prettier@2.7.1
       '@gossi/config-targets': 0.0.1
-      '@gossi/config-template-lint': 0.0.1_ember-template-lint@4.12.0
+      '@gossi/config-template-lint': 0.1.1_ember-template-lint@4.12.0
       '@types/ember': 4.0.1
       '@types/ember-qunit': 5.0.0
       '@types/ember-resolver': 5.0.11
@@ -1892,8 +1892,8 @@ packages:
     engines: {node: 14.* || >= 16.*}
     dev: true
 
-  /@gossi/config-template-lint/0.0.1_ember-template-lint@4.12.0:
-    resolution: {integrity: sha512-WOXuBsQmY37SGVASlAS52m7sZA50vf6H/atdO4fIoohhrjb5BuSGRbAgUebsfYDqiXrlMLO6JdRz3UUI9Oq0Qg==}
+  /@gossi/config-template-lint/0.1.1_ember-template-lint@4.12.0:
+    resolution: {integrity: sha512-f66cobzfRo7QO76Ek5ahuQoVUN4HfinEp4QSuGVSYxCX6aFt/POyFbIzVKRZqLk1fKcltOTl8ysGnSgYvebAdw==}
     engines: {node: 14.* || >= 16.*}
     peerDependencies:
       ember-template-lint: ^4.12.0
@@ -3534,6 +3534,7 @@ packages:
 
   /bindings/1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
+    requiresBuild: true
     dependencies:
       file-uri-to-path: 1.0.0
     dev: true
@@ -7037,6 +7038,7 @@ packages:
 
   /file-uri-to-path/1.0.0:
     resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -9432,6 +9434,7 @@ packages:
 
   /nan/2.16.0:
     resolution: {integrity: sha512-UdAqHyFngu7TfQKsCBgAA6pWDkT8MAO7d0jyOecVhN5354xbLqdn8mV9Tat9gepAupm0bt2DbeaSC8vS52MuFA==}
+    requiresBuild: true
     dev: true
     optional: true
 
