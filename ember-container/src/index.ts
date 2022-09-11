@@ -2,13 +2,18 @@ import type Owner from '@ember/owner';
 import { type Registry as Services } from '@ember/service';
 import { singularize } from 'inflection';
 
-// Related RFC:
-// https://rfcs.emberjs.com/id/0585-improved-ember-registry-apis
+// Related RFC/Types:
+// https://rfcs.emberjs.com/id/0585-improved-ember-registry-apis/#appendix-typescript
 
-interface Container {
-  [container: string]: Record<string, unknown>;
-  services: Services;
+interface UnknownContainers {
+  readonly [container: string]: Record<string, unknown>;
 }
+
+interface NamedContainers {
+  readonly services: Services;
+}
+
+type Container = UnknownContainers & NamedContainers;
 
 type Lookup = `${string}:${string}`;
 
