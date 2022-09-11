@@ -37,7 +37,7 @@
     "@glimmer/tracking": "^1.1.2",
     "@gossi/config-eslint": "^0.0.1",
     "@gossi/config-prettier": "^0.0.1",
-    "@gossi/config-targets": "^0.0.1",
+    "@gossi/config-targets": "^0.1.0",
     "@gossi/config-template-lint": "^0.0.1",
     "@types/ember": "^4.0.0",
     "@types/ember-resolver": "^5.0.11",
