@@ -1,6 +1,8 @@
-import type Owner from '@ember/owner';
 import { type Registry as Services } from '@ember/service';
+
 import { singularize } from 'inflection';
+
+import type Owner from '@ember/owner';
 
 // Related RFC/Types:
 // https://rfcs.emberjs.com/id/0585-improved-ember-registry-apis/#appendix-typescript
@@ -28,11 +30,13 @@ class ContainerHandler implements ProxyHandler<Owner> {
     this.#type = type;
   }
 
-  get(_target: Owner, name: string) {
+  get(_owner: Owner, name: string) {
     const lookup: Lookup = `${this.#type}:${String(name)}`;
+
     if (!this.#cache.has(lookup)) {
       this.#cache.set(name, this.#owner.lookup(lookup));
     }
+
     return this.#cache.get(name);
   }
 }

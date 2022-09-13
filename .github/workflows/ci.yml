@@ -75,7 +75,30 @@ jobs:
       - name: Install Dependencies
         run: pnpm install
       - name: Run Tests
-        run: pnpm test
+        run: pnpm --filter test-app run test:ember
+
+  floating-deps-test:
+    name: Floating Dependencies
+    runs-on: ubuntu-latest
+    needs:
+      - install_dependencies
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: volta-cli/action@v3
+      - name: Cache pnpm modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: ${{ runner.os }}-
+      - uses: pnpm/action-setup@v2.2.2
+        with:
+          version: latest
+      - name: Install Dependencies
+        run: rm pnpm-lock.yaml && pnpm install
+      - name: Run Tests
+        run: pnpm --filter test-app run test:ember
 
   # floating:
   #   name: "Floating Dependencies"
@@ -92,33 +115,33 @@ jobs:
   #     - name: Run Tests
   #       run: yarn test
 
-  # try-scenarios:
-  #   name: ${{ matrix.try-scenario }}
-  #   runs-on: ubuntu-latest
-  #   needs: "test"
+  try-scenarios:
+    name: ${{ matrix.try-scenario }}
+    runs-on: ubuntu-latest
+    needs: "test"
 
-  #   strategy:
-  #     fail-fast: false
-  #     matrix:
-  #       try-scenario:
-  #         - ember-lts-3.24
-  #         - ember-lts-3.28
-  #         - ember-release
-  #         - ember-beta
-  #         - ember-canary
-  #         - ember-classic
-  #         - embroider-safe
-  #         - embroider-optimized
+    strategy:
+      fail-fast: false
+      matrix:
+        try-scenario:
+          - ember-lts-3.28
+          - ember-lts-4.4
+          - ember-release
+          - ember-beta
+          - ember-canary
+          - ember-classic
+          - embroider-safe
+          - embroider-optimized
 
-  #   steps:
-  #     - uses: actions/checkout@v3
-  #     - name: Install Node
-  #       uses: actions/setup-node@v3
-  #       with:
-  #         node-version: 14.x
-  #         cache: yarn
-  #     - name: Install Dependencies
-  #       run: yarn install --frozen-lockfile
-  #     - name: Run Tests
-  #       run: ./node_modules/.bin/ember try:one ${{ matrix.try-scenario }}
-  #       working-directory: test-app
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14.x
+          cache: yarn
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
+      - name: Run Tests
+        run: ./node_modules/.bin/ember try:one ${{ matrix.try-scenario }} --skip-cleanup
+        working-directory: test-app
