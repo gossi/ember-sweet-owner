@@ -20,6 +20,7 @@
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
     "lint:types": "tsc --noEmit",
+    "release": "release-it",
     "start": "rollup --config --watch"
   },
   "dependencies": {
