@@ -55,4 +55,4 @@ function makeContainer(owner: Owner): Container {
   }) as unknown as Container;
 }
 
-export { makeContainer };
+export { Container, makeContainer };
