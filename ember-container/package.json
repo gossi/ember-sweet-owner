@@ -5,9 +5,12 @@
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gossi/ember-container.git"
+  },
   "license": "MIT",
-  "author": "",
+  "author": "Thomas Gossmann",
   "types": "dist/",
   "files": [
     "addon-main.js",
