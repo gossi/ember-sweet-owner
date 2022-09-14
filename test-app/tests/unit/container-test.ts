@@ -1,7 +1,11 @@
-import { module, test } from 'qunit';
-import { setupTest } from '../helpers';
-import { makeContainer } from 'ember-container';
 import Service from '@ember/service';
+import { module, test } from 'qunit';
+
+import { makeContainer } from 'ember-container';
+
+import { setupTest } from '../helpers';
+
+import type { TestContext } from '@ember/test-helpers';
 
 class FooService extends Service {
   prop = 'foo';
@@ -16,22 +20,22 @@ declare module '@ember/service' {
 module('Unit | Container', function (hooks) {
   setupTest(hooks);
 
-  test('can access service from container', async function (assert) {
+  test('can access service from container', async function (this: TestContext, assert) {
     this.owner.register('service:foo', FooService);
 
     const container = makeContainer(this.owner);
 
     assert.ok(container.services.foo);
-    assert.equal(container.services.foo.prop, 'foo');
+    assert.strictEqual(container.services.foo.prop, 'foo');
   });
 
-  test('destructuring', async function (assert) {
+  test('destructuring', async function (this: TestContext, assert) {
     this.owner.register('service:foo', FooService);
 
     const { services } = makeContainer(this.owner);
     const { foo } = services;
 
     assert.ok(foo);
-    assert.equal(foo.prop, 'foo');
+    assert.strictEqual(foo.prop, 'foo');
   });
 });

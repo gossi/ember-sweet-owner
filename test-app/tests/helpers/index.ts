@@ -1,8 +1,9 @@
 import {
   setupApplicationTest as upstreamSetupApplicationTest,
   setupRenderingTest as upstreamSetupRenderingTest,
-  setupTest as upstreamSetupTest,
+  setupTest as upstreamSetupTest
 } from 'ember-qunit';
+
 import type EmberResolver from 'ember-resolver';
 
 interface SetupTestOptions {
