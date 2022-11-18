@@ -29,7 +29,7 @@ importers:
       '@types/inflection': ^1.13.0
       concurrently: ^7.4.0
       eslint: ^8.23.1
-      inflection: ^1.13.2
+      inflection: ^2.0.0
       prettier: ^2.7.1
       release-it: ^15.4.1
       rollup: ^2.79.0
@@ -37,7 +37,7 @@ importers:
       typescript: ^4.8.3
     dependencies:
       '@embroider/addon-shim': 1.8.3
-      inflection: 1.13.2
+      inflection: 2.0.0
     devDependencies:
       '@babel/core': 7.19.0
       '@babel/eslint-parser': 7.18.9_eia2ig3m3pjccex4igkch6uffy
@@ -8247,6 +8247,12 @@ packages:
   /inflection/1.13.2:
     resolution: {integrity: sha512-cmZlljCRTBFouT8UzMzrGcVEvkv6D/wBdcdKG7J1QH5cXjtU75Dm+P27v9EKu/Y43UYyCJd1WC4zLebRrC8NBw==}
     engines: {'0': node >= 0.4.0}
+    dev: true
+
+  /inflection/2.0.0:
+    resolution: {integrity: sha512-omnh6uoxorVM2tC8hDAjs2gUAqP2riJO8ZZc/TIgXIMZjR7a+/HMU+KtuAZYkMb5S6oqsZilr9du3r72eFdgjA==}
+    engines: {node: '>=14.0.0'}
+    dev: false
 
   /inflight/1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
