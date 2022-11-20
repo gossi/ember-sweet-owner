@@ -119,7 +119,7 @@ importers:
       ember-resolver: ^8.0.3
       ember-source: ~4.8.0
       ember-source-channel-url: ^3.0.0
-      ember-template-lint: ^4.14.0
+      ember-template-lint: ^5.0.0
       ember-try: ^2.0.0
       eslint: ^8.23.1
       loader.js: ^4.7.0
@@ -140,7 +140,7 @@ importers:
       '@gossi/config-eslint': 0.1.3_prdxvwpqz7ols7qpi4wzmubrfu
       '@gossi/config-prettier': 0.1.3_prettier@2.7.1
       '@gossi/config-targets': 0.1.3
-      '@gossi/config-template-lint': 0.1.3_ember-template-lint@4.14.0
+      '@gossi/config-template-lint': 0.1.3_ember-template-lint@5.0.0
       '@types/ember': 4.0.1
       '@types/ember-qunit': 5.0.0
       '@types/ember-resolver': 5.0.11
@@ -181,7 +181,7 @@ importers:
       ember-resolver: 8.0.3_@babel+core@7.19.0
       ember-source: 4.8.0_whqvdokhgivdst4dytjzvun4um
       ember-source-channel-url: 3.0.0
-      ember-template-lint: 4.14.0_ember-cli-htmlbars@6.1.1
+      ember-template-lint: 5.0.0_ember-cli-htmlbars@6.1.1
       ember-try: 2.0.0
       eslint: 8.23.1
       loader.js: 4.7.0
@@ -1972,13 +1972,13 @@ packages:
     engines: {node: 14.* || >= 16.*}
     dev: true
 
-  /@gossi/config-template-lint/0.1.3_ember-template-lint@4.14.0:
+  /@gossi/config-template-lint/0.1.3_ember-template-lint@5.0.0:
     resolution: {integrity: sha512-QeuCm26U8uyFot0wZmW661gvoBN9IrsndDmzVOUyPNcgCx0/i2NKmerL0fPgcBYO/ONeWhbCSvz02/jVkBMOsw==}
     engines: {node: 14.* || >= 16.*}
     peerDependencies:
       ember-template-lint: ^4.14.0
     dependencies:
-      ember-template-lint: 4.14.0_ember-cli-htmlbars@6.1.1
+      ember-template-lint: 5.0.0_ember-cli-htmlbars@6.1.1
     dev: true
 
   /@handlebars/parser/2.0.0:
@@ -3742,7 +3742,7 @@ packages:
     dependencies:
       ansi-align: 3.0.1
       camelcase: 7.0.0
-      chalk: 5.0.1
+      chalk: 5.1.2
       cli-boxes: 3.0.0
       string-width: 5.1.2
       type-fest: 2.19.0
@@ -4521,6 +4521,11 @@ packages:
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
     dev: true
 
+  /chalk/5.1.2:
+    resolution: {integrity: sha512-E5CkT4jWURs1Vy5qGJye+XwCkNj7Od3Af7CP6SujMetSMkLs8Do2RWJK5yx1wamHV/op8Rz+9rltjaTQWDnEFQ==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
+    dev: true
+
   /character-entities/2.0.2:
     resolution: {integrity: sha512-shx7oQ0Awen/BRIdkjkvz54PnEEI/EjwXDSIZp86/KKdbafHh1Df/RYGBhn4hbe2+uKC9FnT5UCEdyPz3ai9hQ==}
     dev: true
@@ -4547,6 +4552,11 @@ packages:
 
   /ci-info/3.3.2:
     resolution: {integrity: sha512-xmDt/QIAdeZ9+nfdPsaBCpMvHNLFiLdjj59qjqn+6iPe6YmHGQ35sBnQ8uslRBXFmXkiZQOJRjvQeoGppoTjjg==}
+    dev: true
+
+  /ci-info/3.6.1:
+    resolution: {integrity: sha512-up5ggbaDqOqJ4UqLKZ2naVkyqSJQgJi5lwD6b6mM748ysrghDBX0bx/qJTUHzw7zu6Mq4gycviSF5hJnwceD8w==}
+    engines: {node: '>=8'}
     dev: true
 
   /class-utils/0.3.6:
@@ -6167,8 +6177,8 @@ packages:
       - webpack
     dev: true
 
-  /ember-template-imports/3.1.1_ember-cli-htmlbars@6.1.1:
-    resolution: {integrity: sha512-ZsujuOwaF6lWDDeKC0NleCUAC8f06CfxWQPmejNnxg5gUdqHFTfW9L++X9RLLV/pJZ6eCtax7L94XkXQJ1LfBA==}
+  /ember-template-imports/3.4.0_ember-cli-htmlbars@6.1.1:
+    resolution: {integrity: sha512-3Cwcj3NXA129g3ZhmrQ/nYOxksFonTmB/qxyaSNTHrLBSoc93UZys47hBz13DlcfoeSCCrNt2Qpq1j890I04PQ==}
     engines: {node: 12.* || >= 14}
     peerDependencies:
       ember-cli-htmlbars: ^6.0.0
@@ -6187,17 +6197,17 @@ packages:
       - supports-color
     dev: true
 
-  /ember-template-lint/4.14.0_ember-cli-htmlbars@6.1.1:
-    resolution: {integrity: sha512-kr7jvAx74y4CZxMJ+B8AYszYZjdyE0opSPo+6vLW43jKyq2oowjqPDEBd6upsUALvYtNAPn8b6D+Vbiy7UP+Kg==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+  /ember-template-lint/5.0.0_ember-cli-htmlbars@6.1.1:
+    resolution: {integrity: sha512-HbGhA0XziKQ6EUQ6Va05ICyANUvWkInaYGR/Di0mgrj/CguFIsyXyS3aDNxqNNGAhNZi5M6xLqB30OgwuBlvqQ==}
+    engines: {node: ^14.18.0 || ^16.0.0 || >= 18.0.0}
     hasBin: true
     dependencies:
       '@lint-todo/utils': 13.0.3
       aria-query: 5.0.2
-      chalk: 4.1.2
-      ci-info: 3.3.2
+      chalk: 5.1.2
+      ci-info: 3.6.1
       date-fns: 2.29.3
-      ember-template-imports: 3.1.1_ember-cli-htmlbars@6.1.1
+      ember-template-imports: 3.4.0_ember-cli-htmlbars@6.1.1
       ember-template-recast: 6.1.3
       find-up: 6.3.0
       fuse.js: 6.6.2
@@ -8332,7 +8342,7 @@ packages:
     engines: {node: '>=12.0.0'}
     dependencies:
       ansi-escapes: 5.0.0
-      chalk: 5.0.1
+      chalk: 5.1.2
       cli-cursor: 4.0.0
       cli-width: 4.0.0
       external-editor: 3.1.0
@@ -8428,7 +8438,7 @@ packages:
     resolution: {integrity: sha512-ZYvCgrefwqoQ6yTyYUbQu64HsITZ3NfKX1lzaEYdkTDcfKzzCI/wthRRYKkdjHKFVgNiXKAKm65Zo1pk2as/QQ==}
     hasBin: true
     dependencies:
-      ci-info: 3.3.2
+      ci-info: 3.6.1
     dev: true
 
   /is-core-module/2.10.0:
@@ -9300,7 +9310,7 @@ packages:
     resolution: {integrity: sha512-l0x2DvrW294C9uDCoQe1VSU4gf529FkSZ6leBl4TiqZH/e+0R7hSfHQBNut2mNygDgHwvYHfFLn6Oxb3VWj2rA==}
     engines: {node: '>=12'}
     dependencies:
-      chalk: 5.0.1
+      chalk: 5.1.2
       is-unicode-supported: 1.3.0
     dev: true
 
@@ -10319,7 +10329,7 @@ packages:
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       bl: 5.0.0
-      chalk: 5.0.1
+      chalk: 5.1.2
       cli-cursor: 4.0.0
       cli-spinners: 2.7.0
       is-interactive: 2.0.0
@@ -12858,7 +12868,7 @@ packages:
     engines: {node: '>=14.16'}
     dependencies:
       boxen: 7.0.0
-      chalk: 5.0.1
+      chalk: 5.1.2
       configstore: 6.0.0
       has-yarn: 3.0.0
       import-lazy: 4.0.0
