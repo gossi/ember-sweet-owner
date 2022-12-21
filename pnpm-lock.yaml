@@ -77,7 +77,7 @@ importers:
       '@gossi/config-eslint': ^0.3.0
       '@gossi/config-prettier': ^0.3.0
       '@gossi/config-targets': ^0.3.0
-      '@gossi/config-template-lint': ^0.1.3
+      '@gossi/config-template-lint': ^0.3.0
       '@types/ember': ^4.0.0
       '@types/ember-qunit': ^5.0.0
       '@types/ember-resolver': ^5.0.11
@@ -140,7 +140,7 @@ importers:
       '@gossi/config-eslint': 0.3.0_p5wkpfdglyvznnfqz7upc4sow4
       '@gossi/config-prettier': 0.3.0_prettier@2.7.1
       '@gossi/config-targets': 0.3.0
-      '@gossi/config-template-lint': 0.1.3_ember-template-lint@5.0.0
+      '@gossi/config-template-lint': 0.3.0_ojfnzohcxm5exm5dk2mywnplbi
       '@types/ember': 4.0.1
       '@types/ember-qunit': 5.0.0
       '@types/ember-resolver': 5.0.11
@@ -2248,13 +2248,16 @@ packages:
     engines: {node: 16.* || >= 18.*}
     dev: true
 
-  /@gossi/config-template-lint/0.1.3_ember-template-lint@5.0.0:
-    resolution: {integrity: sha512-QeuCm26U8uyFot0wZmW661gvoBN9IrsndDmzVOUyPNcgCx0/i2NKmerL0fPgcBYO/ONeWhbCSvz02/jVkBMOsw==}
-    engines: {node: 14.* || >= 16.*}
+  /@gossi/config-template-lint/0.3.0_ojfnzohcxm5exm5dk2mywnplbi:
+    resolution: {integrity: sha512-jAD7EjsSYvbmvQwXe1nhyxySfnp/xLLSkyZgZZeymiRSOBXfwZ2+oTJqGFu3QiOwuRd26XjpSnEWjLprbPy/1A==}
+    engines: {node: 16.* || >= 18.*}
     peerDependencies:
-      ember-template-lint: ^4.14.0
+      ember-template-lint: ^5.0.0
     dependencies:
       ember-template-lint: 5.0.0_ember-cli-htmlbars@6.1.1
+      ember-template-lint-plugin-prettier: 4.1.0_ojfnzohcxm5exm5dk2mywnplbi
+    transitivePeerDependencies:
+      - prettier
     dev: true
 
   /@handlebars/parser/2.0.0:
@@ -6471,6 +6474,18 @@ packages:
       validate-peer-dependencies: 1.2.0
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /ember-template-lint-plugin-prettier/4.1.0_ojfnzohcxm5exm5dk2mywnplbi:
+    resolution: {integrity: sha512-LGGn1SXS5vhH60Tp37D4yG8z9ftVMCSSBn5qst+7rjMtLAZuZYwq+q+fs46op745ds0NNtaj+3OzSpBj+RVL2w==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      ember-template-lint: '>= 4.0.0'
+      prettier: '>= 1.18.1'
+    dependencies:
+      ember-template-lint: 5.0.0_ember-cli-htmlbars@6.1.1
+      prettier: 2.7.1
+      prettier-linter-helpers: 1.0.0
     dev: true
 
   /ember-template-lint/5.0.0_ember-cli-htmlbars@6.1.1:
