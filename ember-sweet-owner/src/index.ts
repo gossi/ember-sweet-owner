@@ -7,19 +7,19 @@ import type Owner from '@ember/owner';
 // Related RFC/Types:
 // https://rfcs.emberjs.com/id/0585-improved-ember-registry-apis/#appendix-typescript
 
-interface UnknownContainers {
+interface UnknownSweetOwner {
   readonly [container: string]: Record<string, unknown>;
 }
 
-interface NamedContainers {
+interface NamedSweetOwner {
   readonly services: Services;
 }
 
-type Container = UnknownContainers & NamedContainers;
+type SweetOwner = UnknownSweetOwner & NamedSweetOwner;
 
 type Lookup = `${string}:${string}`;
 
-class ContainerHandler implements ProxyHandler<Owner> {
+class OwnerHandler implements ProxyHandler<Owner> {
   #type: string;
   #owner: Owner;
 
@@ -41,18 +41,18 @@ class ContainerHandler implements ProxyHandler<Owner> {
   }
 }
 
-function makeContainer(owner: Owner): Container {
+function sweetenOwner(owner: Owner): SweetOwner {
   const CACHE = new WeakMap<Owner, Owner>();
 
   return new Proxy(owner, {
     get(_target: Owner, container: string) {
       if (!CACHE.has(owner)) {
-        CACHE.set(owner, new Proxy(owner, new ContainerHandler(owner, singularize(container))));
+        CACHE.set(owner, new Proxy(owner, new OwnerHandler(owner, singularize(container))));
       }
 
       return CACHE.get(owner);
     }
-  }) as unknown as Container;
+  }) as unknown as SweetOwner;
 }
 
-export { Container, makeContainer };
+export { sweetenOwner, SweetOwner };

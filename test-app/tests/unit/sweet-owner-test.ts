@@ -1,7 +1,7 @@
 import Service from '@ember/service';
 import { module, test } from 'qunit';
 
-import { makeContainer } from 'ember-container';
+import { sweetenOwner } from 'ember-sweet-owner';
 
 import { setupTest } from '../helpers';
 
@@ -17,13 +17,13 @@ declare module '@ember/service' {
   }
 }
 
-module('Unit | Container', function (hooks) {
+module('Unit | Sweet Owner', function (hooks) {
   setupTest(hooks);
 
-  test('can access service from container', async function (this: TestContext, assert) {
+  test('can access service from sweet owner', async function (this: TestContext, assert) {
     this.owner.register('service:foo', FooService);
 
-    const container = makeContainer(this.owner);
+    const container = sweetenOwner(this.owner);
 
     assert.ok(container.services.foo);
     assert.strictEqual(container.services.foo.prop, 'foo');
@@ -32,7 +32,7 @@ module('Unit | Container', function (hooks) {
   test('destructuring', async function (this: TestContext, assert) {
     this.owner.register('service:foo', FooService);
 
-    const { services } = makeContainer(this.owner);
+    const { services } = sweetenOwner(this.owner);
     const { foo } = services;
 
     assert.ok(foo);

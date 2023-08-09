@@ -1,7 +1,9 @@
 {
-  "version": "0.0.0",
   "private": true,
-  "repository": "https://github.com/gossi/ember-container",
+  "repository": "https://github.com/gossi/ember-sweet-owner",
   "license": "MIT",
-  "author": "Thomas Gossmann"
+  "author": "Thomas Gossmann",
+  "volta": {
+    "node": "18.17.0"
+  }
 }
