@@ -108,9 +108,15 @@ importers:
       '@babel/core':
         specifier: ^7.22.10
         version: 7.22.10
+      '@babel/eslint-parser':
+        specifier: ^7.22.10
+        version: 7.22.10(@babel/core@7.22.10)(eslint@8.46.0)
       '@ember/optional-features':
         specifier: ^2.0.0
         version: 2.0.0
+      '@ember/string':
+        specifier: ^3.1.1
+        version: 3.1.1
       '@ember/test-helpers':
         specifier: ^3.2.0
         version: 3.2.0(ember-source@5.2.0)(webpack@5.88.2)
@@ -177,12 +183,6 @@ importers:
       ember-cli-inject-live-reload:
         specifier: ^2.1.0
         version: 2.1.0
-      ember-cli-sri:
-        specifier: ^2.1.1
-        version: 2.1.1
-      ember-cli-terser:
-        specifier: ^4.0.2
-        version: 4.0.2
       ember-disable-prototype-extensions:
         specifier: ^1.1.3
         version: 1.1.3
@@ -1712,6 +1712,15 @@ packages:
       - supports-color
     dev: true
 
+  /@ember/string@3.1.1:
+    resolution: {integrity: sha512-UbXJ+k3QOrYN4SRPHgXCqYIJ+yWWUg1+vr0H4DhdQPTy8LJfyqwZ2tc5uqpSSnEXE+/1KopHBE5J8GDagAg5cg==}
+    engines: {node: 12.* || 14.* || >= 16}
+    dependencies:
+      ember-cli-babel: 7.26.11
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /@ember/test-helpers@3.2.0(ember-source@5.2.0)(webpack@5.88.2):
     resolution: {integrity: sha512-3yWpPsK5O77tUdCwW3HayrAcdlRitIRYMvLIG69Pkal1JMIGdNYVTvJ2R1lenhQh2syd/WFmGM07vQuDAtotQw==}
     engines: {node: 16.* || >= 18}
@@ -2361,13 +2370,6 @@ packages:
   /@jridgewell/set-array@1.1.2:
     resolution: {integrity: sha512-xnkseuNADM0gt2bs+BvhO0p78Mk762YnZdsuzFV018NoG1Sj1SCQvpSqa7XUaTam5vAGasABV9qXASMKnFMwMw==}
     engines: {node: '>=6.0.0'}
-    dev: true
-
-  /@jridgewell/source-map@0.3.2:
-    resolution: {integrity: sha512-m7O9o2uR8k2ObDysZYzdfhb08VuEml5oWGiosa1VdaPZ/A6QyPkAJuwN0Q1lhULOf6B7MtQmHENS743hWtCrgw==}
-    dependencies:
-      '@jridgewell/gen-mapping': 0.3.2
-      '@jridgewell/trace-mapping': 0.3.19
     dev: true
 
   /@jridgewell/source-map@0.3.5:
@@ -4069,19 +4071,6 @@ packages:
       - supports-color
     dev: true
 
-  /broccoli-caching-writer@2.3.1:
-    resolution: {integrity: sha512-lfoDx98VaU8tG4mUXCxKdKyw2Lr+iSIGUjCgV83KC2zRC07SzYTGuSsMqpXFiOQlOGuoJxG3NRoyniBa1BWOqA==}
-    dependencies:
-      broccoli-kitchen-sink-helpers: 0.2.9
-      broccoli-plugin: 1.1.0
-      debug: 2.6.9
-      rimraf: 2.7.1
-      rsvp: 3.6.2
-      walk-sync: 0.2.7
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /broccoli-caching-writer@3.0.3:
     resolution: {integrity: sha512-g644Kb5uBPsy+6e2DvO3sOc+/cXZQQNgQt64QQzjA9TSdP0dl5qvetpoNIx4sy/XIjrPYG1smEidq9Z9r61INw==}
     dependencies:
@@ -4209,13 +4198,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /broccoli-kitchen-sink-helpers@0.2.9:
-    resolution: {integrity: sha512-C+oEqivDofZv/h80rgN4WJkbZkbfwkrIeu8vFn4bb4m4jPd3ICNNplhkXGl3ps439pzc2yjZ1qIwz0yy8uHcQg==}
-    dependencies:
-      glob: 5.0.15
-      mkdirp: 0.5.6
-    dev: true
-
   /broccoli-kitchen-sink-helpers@0.3.1:
     resolution: {integrity: sha512-gqYnKSJxBSjj/uJqeuRAzYVbmjWhG0mOZ8jrp6+fnUIOgLN6MvI7XxBECDHkYMIFPJ8Smf4xaI066Q2FqQDnXg==}
     dependencies:
@@ -4336,15 +4318,6 @@ packages:
       - supports-color
     dev: true
 
-  /broccoli-plugin@1.1.0:
-    resolution: {integrity: sha512-dY1QsA20of9wWEto8yhN7JQjpfjySmgeIMsvnQ9aBAv1wEJJCe04B0ekdgq7Bduyx9yWXdoC5CngGy81swmp2w==}
-    dependencies:
-      promise-map-series: 0.2.3
-      quick-temp: 0.1.8
-      rimraf: 2.7.1
-      symlink-or-copy: 1.3.1
-    dev: true
-
   /broccoli-plugin@1.3.1:
     resolution: {integrity: sha512-DW8XASZkmorp+q7J4EeDEZz+LoyKLAd2XZULXyD9l4m9/hAKV3vjHmB1kiUshcWAYMgTP1m2i4NnqCE/23h6AQ==}
     dependencies:
@@ -4396,18 +4369,6 @@ packages:
       broccoli-node-api: 1.7.0
     dev: true
 
-  /broccoli-sri-hash@2.1.2:
-    resolution: {integrity: sha512-toLD/v7ut2ajcH8JsdCMG2Bpq2qkwTcKM6CMzVMSAJjaz/KpK69fR+gSqe1dsjh+QTdxG0yVvkq3Sij/XMzV6A==}
-    dependencies:
-      broccoli-caching-writer: 2.3.1
-      mkdirp: 0.5.6
-      rsvp: 3.6.2
-      sri-toolbox: 0.2.0
-      symlink-or-copy: 1.3.1
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /broccoli-stew@3.0.0:
     resolution: {integrity: sha512-NXfi+Vas24n3Ivo21GvENTI55qxKu7OwKRnCLWXld8MiLiQKQlWIq28eoARaFj0lTUFwUa4jKZeA7fW9PiWQeg==}
     engines: {node: 8.* || >= 10.*}
@@ -4426,24 +4387,6 @@ packages:
       rsvp: 4.8.5
       symlink-or-copy: 1.3.1
       walk-sync: 1.1.4
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /broccoli-terser-sourcemap@4.1.0:
-    resolution: {integrity: sha512-zkNnjsAbP+M5rG2aMM1EE4BmXPUSxFKmtLUkUs2D1DLTOJQoF1xlOjGWjjKYCFy5tw8t4+tgGJ+HVa2ucJZ8sw==}
-    engines: {node: ^10.12.0 || 12.* || >= 14}
-    dependencies:
-      async-promise-queue: 1.0.5
-      broccoli-plugin: 4.0.7
-      debug: 4.3.4
-      lodash.defaultsdeep: 4.6.1
-      matcher-collection: 2.0.1
-      source-map-url: 0.4.1
-      symlink-or-copy: 1.3.1
-      terser: 5.14.2
-      walk-sync: 2.2.0
-      workerpool: 6.2.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5932,26 +5875,8 @@ packages:
       - supports-color
     dev: true
 
-  /ember-cli-sri@2.1.1:
-    resolution: {integrity: sha512-YG/lojDxkur9Bnskt7xB6gUOtJ6aPl/+JyGYm9HNDk3GECVHB3SMN3rlGhDKHa1ndS5NK2W2TSLb9bzRbGlMdg==}
-    engines: {node: '>= 0.10.0'}
-    dependencies:
-      broccoli-sri-hash: 2.1.2
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /ember-cli-string-utils@1.1.0:
     resolution: {integrity: sha512-PlJt4fUDyBrC/0X+4cOpaGCiMawaaB//qD85AXmDRikxhxVzfVdpuoec02HSiTGTTB85qCIzWBIh8lDOiMyyFg==}
-    dev: true
-
-  /ember-cli-terser@4.0.2:
-    resolution: {integrity: sha512-Ej77K+YhCZImotoi/CU2cfsoZaswoPlGaM5TB3LvjvPDlVPRhxUHO2RsaUVC5lsGeRLRiHCOxVtoJ6GyqexzFA==}
-    engines: {node: 10.* || 12.* || >= 14}
-    dependencies:
-      broccoli-terser-sourcemap: 4.1.0
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   /ember-cli-test-loader@3.0.0:
@@ -9522,10 +9447,6 @@ packages:
     resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
     dev: true
 
-  /lodash.defaultsdeep@4.6.1:
-    resolution: {integrity: sha512-3j8wdDzYuWO3lM3Reg03MuQR957t287Rpcxp1njpEa8oDrikb+FwGdW3n+FELh/A6qib6yPit0j/pv9G/yeAqA==}
-    dev: true
-
   /lodash.escaperegexp@4.1.2:
     resolution: {integrity: sha512-TM9YBvyC84ZxE3rgfefxUWiQKLilstD6k7PTGt6wfbtXF8ixIJLOL3VYyV/z+ZiPLsVxAsKAFVwWlWeb2Y8Yyw==}
     dev: true
@@ -12397,11 +12318,6 @@ packages:
   /sprintf-js@1.1.2:
     resolution: {integrity: sha512-VE0SOVEHCk7Qc8ulkWw3ntAzXuqf7S2lvwQaDLRnUeIEaKNQJzV6BwmLKhOqT61aGhfUMrXeaBk+oDGCzvhcug==}
 
-  /sri-toolbox@0.2.0:
-    resolution: {integrity: sha512-DQIMWCAr/M7phwo+d3bEfXwSBEwuaJL+SJx9cuqt1Ty7K96ZFoHpYnSbhrQZEr0+0/GtmpKECP8X/R4RyeTAfw==}
-    engines: {node: '>= 0.10.4'}
-    dev: true
-
   /ssri@8.0.1:
     resolution: {integrity: sha512-97qShzy1AiyxvPNIkLWoGua7xoQzzPjQ0HAH4B0rWKo7SZ6USuPcrUiAFrws0UH8RrbWmgq3LMTObhPIHbbBeQ==}
     engines: {node: '>= 8'}
@@ -12732,17 +12648,6 @@ packages:
       serialize-javascript: 6.0.1
       terser: 5.19.2
       webpack: 5.88.2
-    dev: true
-
-  /terser@5.14.2:
-    resolution: {integrity: sha512-oL0rGeM/WFQCUd0y2QrWxYnq7tfSuKBiqTjRPWrRgB46WD/kiwHwF8T23z78H6Q6kGCuuHcPB+KULHRdxvVGQA==}
-    engines: {node: '>=10'}
-    hasBin: true
-    dependencies:
-      '@jridgewell/source-map': 0.3.2
-      acorn: 8.8.0
-      commander: 2.20.3
-      source-map-support: 0.5.21
     dev: true
 
   /terser@5.19.2:
@@ -13488,13 +13393,6 @@ packages:
       xml-name-validator: 3.0.0
     dev: true
 
-  /walk-sync@0.2.7:
-    resolution: {integrity: sha512-OH8GdRMowEFr0XSHQeX5fGweO6zSVHo7bG/0yJQx6LAj9Oukz0C8heI3/FYectT66gY0IPGe89kOvU410/UNpg==}
-    dependencies:
-      ensure-posix-path: 1.1.1
-      matcher-collection: 1.1.2
-    dev: true
-
   /walk-sync@0.3.4:
     resolution: {integrity: sha512-ttGcuHA/OBnN2pcM6johpYlEms7XpO5/fyKIr48541xXedan4roO8cS1Q2S/zbbjGH/BarYDAMeS2Mi9HE5Tig==}
     dependencies:
@@ -13741,10 +13639,6 @@ packages:
       rsvp: 4.8.5
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /workerpool@6.2.1:
-    resolution: {integrity: sha512-ILEIE97kDZvF9Wb9f6h5aXK4swSlKGUcOEGiIYb2OOu/IrDU9iwj0fD//SsA6E5ibwJxpEvhullJY4Sl4GcpAw==}
     dev: true
 
   /workerpool@6.4.0:
