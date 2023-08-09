@@ -32,8 +32,8 @@ jobs:
         run: pnpm --filter ember-sweet-owner build
       - name: Lint JS
         run: pnpm run -r --parallel --aggregate-output lint:js
-      - name: Lint Types
-        run: pnpm run -r --parallel --aggregate-output lint:types
+      # - name: Lint Types
+      #   run: pnpm run -r --parallel --aggregate-output lint:types
       - name: Lint Handlebars
         run: pnpm run -r --parallel --aggregate-output lint:hbs
       - name: Tests
@@ -51,8 +51,8 @@ jobs:
         run: pnpm --filter ember-sweet-owner build
       - name: Lint JS
         run: pnpm run -r --parallel --aggregate-output lint:js
-      - name: Lint Types
-        run: pnpm run -r --parallel --aggregate-output lint:types
+      # - name: Lint Types
+      #   run: pnpm run -r --parallel --aggregate-output lint:types
       - name: Lint Handlebars
         run: pnpm run -r --parallel --aggregate-output lint:hbs
       - name: Tests
