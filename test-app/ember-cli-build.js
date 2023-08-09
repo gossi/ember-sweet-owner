@@ -9,8 +9,8 @@ module.exports = function (defaults) {
       watchDependencies: Object.keys(packageJson.dependencies)
     },
     'ember-cli-babel': {
-      enableTypeScriptTransform: true,
-    },
+      enableTypeScriptTransform: true
+    }
   });
 
   const { maybeEmbroider } = require('@embroider/test-setup');
