@@ -103,7 +103,7 @@
   "ember-addon": {
     "version": 2,
     "type": "addon",
-    "main": "addon-main.js",
+    "main": "addon-main.cjs",
     "app-js": {}
   },
   "volta": {
