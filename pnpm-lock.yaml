@@ -20,6 +20,9 @@ importers:
       '@babel/core':
         specifier: ^7.22.10
         version: 7.22.10
+      '@babel/eslint-parser':
+        specifier: ^7.22.10
+        version: 7.22.10(@babel/core@7.22.10)(eslint@8.46.0)
       '@babel/plugin-proposal-class-properties':
         specifier: ^7.18.6
         version: 7.18.6(@babel/core@7.22.10)
@@ -45,14 +48,14 @@ importers:
         specifier: ^1.0.2
         version: 1.0.2
       '@gossi/config-eslint':
-        specifier: ^0.5.0
-        version: 0.5.0(@babel/core@7.22.10)(@typescript-eslint/eslint-plugin@5.62.0)(@typescript-eslint/parser@5.62.0)(eslint-plugin-ember@11.10.0)(eslint@8.46.0)(prettier@3.0.1)
+        specifier: ^0.5.1
+        version: 0.5.1(@babel/core@7.22.10)(@babel/eslint-parser@7.22.10)(@typescript-eslint/eslint-plugin@5.62.0)(@typescript-eslint/parser@5.62.0)(eslint-plugin-ember@11.10.0)(eslint@8.46.0)(prettier@3.0.1)
       '@gossi/config-prettier':
-        specifier: ^0.5.0
-        version: 0.5.0(prettier@3.0.1)
+        specifier: ^0.5.1
+        version: 0.5.1(prettier@3.0.1)
       '@gossi/config-targets':
-        specifier: ^0.5.0
-        version: 0.5.0
+        specifier: ^0.5.1
+        version: 0.5.1
       '@release-it-plugins/lerna-changelog':
         specifier: ^6.0.0
         version: 6.0.0(release-it@16.1.3)
@@ -121,17 +124,17 @@ importers:
         specifier: ^1.1.2
         version: 1.1.2
       '@gossi/config-eslint':
-        specifier: ^0.5.0
-        version: 0.5.0(@babel/core@7.22.10)(@typescript-eslint/eslint-plugin@5.62.0)(@typescript-eslint/parser@5.62.0)(eslint-plugin-ember@11.10.0)(eslint@8.46.0)(prettier@3.0.1)
+        specifier: ^0.5.1
+        version: 0.5.1(@babel/core@7.22.10)(@babel/eslint-parser@7.22.10)(@typescript-eslint/eslint-plugin@5.62.0)(@typescript-eslint/parser@5.62.0)(eslint-plugin-ember@11.10.0)(eslint@8.46.0)(prettier@3.0.1)
       '@gossi/config-prettier':
-        specifier: ^0.5.0
-        version: 0.5.0(prettier@3.0.1)
+        specifier: ^0.5.1
+        version: 0.5.1(prettier@3.0.1)
       '@gossi/config-targets':
-        specifier: ^0.5.0
-        version: 0.5.0
+        specifier: ^0.5.1
+        version: 0.5.1
       '@gossi/config-template-lint':
-        specifier: ^0.5.0
-        version: 0.5.0(ember-template-lint@5.11.1)(prettier@3.0.1)
+        specifier: ^0.5.1
+        version: 0.5.1(ember-template-lint@5.11.1)(prettier@3.0.1)
       '@tsconfig/ember':
         specifier: ^3.0.0
         version: 3.0.0
@@ -278,6 +281,20 @@ packages:
       semver: 6.3.1
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@babel/eslint-parser@7.22.10(@babel/core@7.22.10)(eslint@8.46.0):
+    resolution: {integrity: sha512-0J8DNPRXQRLeR9rPaUMM3fA+RbixjnVLe/MRMYCkp3hzgsSuxCHQ8NN8xQG1wIHKJ4a1DTROTvFJdW+B5/eOsg==}
+    engines: {node: ^10.13.0 || ^12.13.0 || >=14.0.0}
+    peerDependencies:
+      '@babel/core': ^7.11.0
+      eslint: ^7.5.0 || ^8.0.0
+    dependencies:
+      '@babel/core': 7.22.10
+      '@nicolo-ribaudo/eslint-scope-5-internals': 5.1.1-v1
+      eslint: 8.46.0
+      eslint-visitor-keys: 2.1.0
+      semver: 6.3.1
     dev: true
 
   /@babel/generator@7.22.10:
@@ -2215,8 +2232,8 @@ packages:
     resolution: {integrity: sha512-kFWfJrS7XM0NjC5YSN0CWA9FiN0mhUvWVlQ2O7YRz/uhrO8+TVYNLst0WKELRbfCXbdI7wyYQkazNgz6FoL9CA==}
     dev: true
 
-  /@gossi/config-eslint@0.5.0(@babel/core@7.22.10)(@typescript-eslint/eslint-plugin@5.62.0)(@typescript-eslint/parser@5.62.0)(eslint-plugin-ember@11.10.0)(eslint@8.46.0)(prettier@3.0.1):
-    resolution: {integrity: sha512-8FPvyei0J4dzROgNPC+4jXl3/Wtn811PhV4HjNyjHOYH3lyYZhPleASqtAmEcpbzctqEZs/wqhUDPfHSubkglw==}
+  /@gossi/config-eslint@0.5.1(@babel/core@7.22.10)(@babel/eslint-parser@7.22.10)(@typescript-eslint/eslint-plugin@5.62.0)(@typescript-eslint/parser@5.62.0)(eslint-plugin-ember@11.10.0)(eslint@8.46.0)(prettier@3.0.1):
+    resolution: {integrity: sha512-FGVkfpEuisgBzDkllbR6uBRedAA6KYFqhUGb74QTRPzJdbOWoMnfUSSzTI3wzfSASq67l3EncIJPkAd36BDj0A==}
     engines: {node: 16.* || >= 18.*}
     peerDependencies:
       '@babel/core': ^7.22.5
@@ -2244,12 +2261,13 @@ packages:
         optional: true
     dependencies:
       '@babel/core': 7.22.10
+      '@babel/eslint-parser': 7.22.10(@babel/core@7.22.10)(eslint@8.46.0)
       '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0)(eslint@8.46.0)(typescript@5.1.6)
       '@typescript-eslint/parser': 5.62.0(eslint@8.46.0)(typescript@5.1.6)
       cosmiconfig: 8.2.0
       eslint: 8.46.0
       eslint-config-prettier: 8.10.0(eslint@8.46.0)
-      eslint-plugin-decorator-position: 5.0.2(eslint@8.46.0)
+      eslint-plugin-decorator-position: 5.0.2(@babel/eslint-parser@7.22.10)(eslint@8.46.0)
       eslint-plugin-ember: 11.10.0(eslint@8.46.0)
       eslint-plugin-import: 2.28.0(@typescript-eslint/parser@5.62.0)(eslint@8.46.0)
       eslint-plugin-json: 3.1.0
@@ -2264,31 +2282,31 @@ packages:
       - supports-color
     dev: true
 
-  /@gossi/config-prettier@0.5.0(prettier@3.0.1):
-    resolution: {integrity: sha512-TXPYPDRemZgv4Uhnqc26+pCqVDGBBeqKfLxsRpkB9hJF8x7OiCi/GUD7zzll3HlJiigvFGXMXsN5CSUQxrq4Uw==}
+  /@gossi/config-prettier@0.5.1(prettier@3.0.1):
+    resolution: {integrity: sha512-IOFm4pb53h0dbrlExPGRHdJ4phGIAv/PCEutHKSuUInR6Mg+VMINPFJ/rO6yDcLLouXLUz4lPXU1hDJPGS1xJA==}
     engines: {node: 16.* || >= 18.*}
     peerDependencies:
       prettier: ^3.0.0
     dependencies:
       prettier: 3.0.1
-      prettier-plugin-ember-template-tag: 1.0.1(prettier@3.0.1)
+      prettier-plugin-ember-template-tag: 1.0.2(prettier@3.0.1)
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@gossi/config-targets@0.5.0:
-    resolution: {integrity: sha512-ryPe51wpMI68zCwLFU454C3ViA92EDW4XVXYgxiplGlPhv8sG4kn8VIYknVETdj1tgRGTgxw7SvGsyFuhhksVA==}
+  /@gossi/config-targets@0.5.1:
+    resolution: {integrity: sha512-iktjffylBVk+gE2YPqgIgfUudcjJjqTynnFMjoDb96dji6lrfghG4NIC3lfaSIx/CDGkckji7VvcOzVQxrZBCw==}
     engines: {node: 16.* || >= 18.*}
     dev: true
 
-  /@gossi/config-template-lint@0.5.0(ember-template-lint@5.11.1)(prettier@3.0.1):
-    resolution: {integrity: sha512-79IbJ3PDwgDztgVGeBgeyyKlycD9nBPq8s2nMde7N25QvDsR6pR3aGg5xoy4CA5OqmAhah2vWvajAUa60NY67g==}
+  /@gossi/config-template-lint@0.5.1(ember-template-lint@5.11.1)(prettier@3.0.1):
+    resolution: {integrity: sha512-N0JJFYwUbrFBGrIAHTNTUEjpzKcvGozMfqquNasBA9hETR3q8dn/ONTnYF9UbXN5AM69/18yJjO4uzTmj6kfBg==}
     engines: {node: 16.* || >= 18.*}
     peerDependencies:
       ember-template-lint: ^5.0.0
     dependencies:
       ember-template-lint: 5.11.1
-      ember-template-lint-plugin-prettier: 4.2.0(ember-template-lint@5.11.1)(prettier@3.0.1)
+      ember-template-lint-plugin-prettier: 5.0.0(ember-template-lint@5.11.1)(prettier@3.0.1)
     transitivePeerDependencies:
       - prettier
     dev: true
@@ -2388,6 +2406,12 @@ packages:
       slash: 3.0.0
       tslib: 2.6.1
       upath: 2.0.1
+    dev: true
+
+  /@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1:
+    resolution: {integrity: sha512-54/JRvkLIzzDWshCWfuhadfrfZVPiElY8Fcgmg1HroEly/EDSszzhBAsarCux+D/kOslTRquNzuyGSmUSTTHGg==}
+    dependencies:
+      eslint-scope: 5.1.1
     dev: true
 
   /@nodelib/fs.scandir@2.1.5:
@@ -2608,6 +2632,14 @@ packages:
     dependencies:
       '@pnpm/network.ca-file': 1.0.1
       config-chain: 1.1.13
+    dev: true
+
+  /@prettier/sync@0.2.1(prettier@3.0.1):
+    resolution: {integrity: sha512-7ls1R6//+GPYD9vof1XaL5psViv83CwpdwlS8oUkWldYgbPhzZ3WgxIQMWqGyBmWPmoBfQg8C7jj7KI/ZuDHhQ==}
+    peerDependencies:
+      prettier: ^3.0.0
+    dependencies:
+      prettier: 3.0.1
     dev: true
 
   /@release-it-plugins/lerna-changelog@6.0.0(release-it@16.1.3):
@@ -3502,7 +3534,7 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
+      define-properties: 1.2.0
       es-abstract: 1.22.1
       get-intrinsic: 1.2.1
       is-string: 1.0.7
@@ -3523,7 +3555,7 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
+      define-properties: 1.2.0
       es-abstract: 1.22.1
       es-shim-unscopables: 1.0.0
       get-intrinsic: 1.2.1
@@ -3534,7 +3566,7 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
+      define-properties: 1.2.0
       es-abstract: 1.22.1
       es-shim-unscopables: 1.0.0
     dev: true
@@ -3544,7 +3576,7 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
+      define-properties: 1.2.0
       es-abstract: 1.22.1
       es-shim-unscopables: 1.0.0
     dev: true
@@ -6354,13 +6386,14 @@ packages:
       - supports-color
     dev: true
 
-  /ember-template-lint-plugin-prettier@4.2.0(ember-template-lint@5.11.1)(prettier@3.0.1):
-    resolution: {integrity: sha512-4t5k9zN0b6lhlFkzCgwBWUpqViPzOYk8FSfHt07p+ECldfUKJHm2tkTWs1NdQx/xybp+O/POtE8sgwSMPxa2wA==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+  /ember-template-lint-plugin-prettier@5.0.0(ember-template-lint@5.11.1)(prettier@3.0.1):
+    resolution: {integrity: sha512-aXUYM4yuIdPZ80+AsAU8QBwGSJJ/aAkRsNcQ5vI5HmXiBjzHlDc/ZhmP6iVcYuCmoA/3iKcssMAYwIDbuby4pg==}
+    engines: {node: ^16.0.0 || ^18.0.0 || >=20.0.0}
     peerDependencies:
       ember-template-lint: '>= 4.0.0'
-      prettier: '>= 1.18.1'
+      prettier: '>= 3.0.0'
     dependencies:
+      '@prettier/sync': 0.2.1(prettier@3.0.1)
       ember-template-lint: 5.11.1
       prettier: 3.0.1
       prettier-linter-helpers: 1.0.0
@@ -6551,7 +6584,7 @@ packages:
       es-to-primitive: 1.2.1
       function-bind: 1.1.1
       function.prototype.name: 1.1.5
-      get-intrinsic: 1.1.2
+      get-intrinsic: 1.2.1
       get-symbol-description: 1.0.0
       has: 1.0.3
       has-property-descriptors: 1.0.0
@@ -6657,7 +6690,7 @@ packages:
     resolution: {integrity: sha512-QCOllgZJtaUo9miYBcLChTUaHNjJF3PYs1VidD7AwiEj1kYxKeQTctLAezAOH5ZKRH0g2IgPn6KwB4IT8iRpvA==}
     engines: {node: '>= 0.4'}
     dependencies:
-      is-callable: 1.2.4
+      is-callable: 1.2.7
       is-date-object: 1.0.5
       is-symbol: 1.0.4
     dev: true
@@ -6768,7 +6801,7 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-decorator-position@5.0.2(eslint@8.46.0):
+  /eslint-plugin-decorator-position@5.0.2(@babel/eslint-parser@7.22.10)(eslint@8.46.0):
     resolution: {integrity: sha512-wFcRfrB9zljOP1n5udg16h6ITX1jG8cnUvuFVtIqVxw5O9BTOXFHB9hvsTaqpb8JFX2dq19fH3i/ipUeFSF87w==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -6779,6 +6812,7 @@ packages:
         optional: true
     dependencies:
       '@babel/core': 7.22.10
+      '@babel/eslint-parser': 7.22.10(@babel/core@7.22.10)(eslint@8.46.0)
       '@babel/plugin-proposal-decorators': 7.22.10(@babel/core@7.22.10)
       '@ember-data/rfc395-data': 0.0.4
       ember-rfc176-data: 0.3.17
@@ -7773,8 +7807,8 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
-      es-abstract: 1.20.1
+      define-properties: 1.2.0
+      es-abstract: 1.22.1
       functions-have-names: 1.2.3
     dev: true
 
@@ -7857,7 +7891,7 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
-      get-intrinsic: 1.1.2
+      get-intrinsic: 1.2.1
     dev: true
 
   /get-uri@6.0.1:
@@ -7991,7 +8025,7 @@ packages:
     resolution: {integrity: sha512-sFdI5LyBiNTHjRd7cGPWapiHWMOXKyuBNX/cWJ3NfzrZQVa8GI/8cofCl74AOVqq9W5kNmguTIzJ/1s2gyI9wA==}
     engines: {node: '>= 0.4'}
     dependencies:
-      define-properties: 1.1.4
+      define-properties: 1.2.0
     dev: true
 
   /globalyzer@0.1.0:
@@ -8162,7 +8196,7 @@ packages:
   /has-property-descriptors@1.0.0:
     resolution: {integrity: sha512-62DVLZGoiEBDHQyqG4w9xCuZ7eJEwNmJRWw2VY84Oedb7WFcA27fiEVe8oUQx9hAUJ4ekurquucTGwsyO1XGdQ==}
     dependencies:
-      get-intrinsic: 1.1.2
+      get-intrinsic: 1.2.1
     dev: true
 
   /has-proto@1.0.1:
@@ -8582,7 +8616,7 @@ packages:
     resolution: {integrity: sha512-O0DB1JC/sPyZl7cIo78n5dR7eUSwwpYPiXRhTzNxZVAMUuB8vlnRFyLxdrVToks6XPLVnFfbzaVd5WLjhgg+vA==}
     engines: {node: '>= 0.4'}
     dependencies:
-      get-intrinsic: 1.1.2
+      get-intrinsic: 1.2.1
       has: 1.0.3
       side-channel: 1.0.4
     dev: true
@@ -10516,7 +10550,7 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
+      define-properties: 1.2.0
       has-symbols: 1.0.3
       object-keys: 1.1.1
     dev: true
@@ -10526,7 +10560,7 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
+      define-properties: 1.2.0
       has-symbols: 1.0.3
       object-keys: 1.1.1
     dev: true
@@ -10536,7 +10570,7 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
+      define-properties: 1.2.0
       es-abstract: 1.22.1
     dev: true
 
@@ -10561,7 +10595,7 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
+      define-properties: 1.2.0
       es-abstract: 1.22.1
     dev: true
 
@@ -11113,10 +11147,9 @@ packages:
       fast-diff: 1.2.0
     dev: true
 
-  /prettier-plugin-ember-template-tag@1.0.1(prettier@3.0.1):
-    resolution: {integrity: sha512-YtRxPDIbyLSHARQt5cbB31R2AMVSibLHC5zvDXnmOGsuz36dcdScFxWrKYMjVeEVHWT5JjC0VWM1mj0o8yzKxQ==}
+  /prettier-plugin-ember-template-tag@1.0.2(prettier@3.0.1):
+    resolution: {integrity: sha512-skL3NH1ay/eTlrTSTtFxoHLBmZJIoTDrb2zOONClt01aKqs/8brh/9ZtnjjLHi9FUq5x/kJ8LCm+6BYmNp696Q==}
     engines: {node: 16.* || 18.* || >= 20}
-    requiresBuild: true
     peerDependencies:
       prettier: '>= 3.0.0'
     dependencies:
@@ -11442,7 +11475,7 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
+      define-properties: 1.2.0
       functions-have-names: 1.2.3
     dev: true
 
@@ -12129,7 +12162,7 @@ packages:
     resolution: {integrity: sha512-q5XPytqFEIKHkGdiMIrY10mvLRvnQh42/+GoBlFW3b2LXLE2xxJpZFdm94we0BaoV3RwJyGqg5wS7epxTv0Zvw==}
     dependencies:
       call-bind: 1.0.2
-      get-intrinsic: 1.1.2
+      get-intrinsic: 1.2.1
       object-inspect: 1.12.2
     dev: true
 
@@ -12479,7 +12512,7 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
+      define-properties: 1.2.0
       es-abstract: 1.22.1
     dev: true
 
@@ -12487,15 +12520,15 @@ packages:
     resolution: {integrity: sha512-I7RGvmjV4pJ7O3kdf+LXFpVfdNOxtCW/2C8f6jNiW4+PQchwxkCDzlk1/7p+Wl4bqFIZeF47qAHXLuHHWKAxog==}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
-      es-abstract: 1.20.1
+      define-properties: 1.2.0
+      es-abstract: 1.22.1
     dev: true
 
   /string.prototype.trimend@1.0.6:
     resolution: {integrity: sha512-JySq+4mrPf9EsDBEDYMOb/lM7XQLulwg5R/m1r0PXEFqrV0qHvl58sdTilSXtKOflCsK2E8jxf+GKC0T07RWwQ==}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
+      define-properties: 1.2.0
       es-abstract: 1.22.1
     dev: true
 
@@ -12503,15 +12536,15 @@ packages:
     resolution: {integrity: sha512-THx16TJCGlsN0o6dl2o6ncWUsdgnLRSA23rRE5pyGBw/mLr3Ej/R2LaqCtgP8VNMGZsvMWnf9ooZPyY2bHvUFg==}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
-      es-abstract: 1.20.1
+      define-properties: 1.2.0
+      es-abstract: 1.22.1
     dev: true
 
   /string.prototype.trimstart@1.0.6:
     resolution: {integrity: sha512-omqjMDaY92pbn5HOX7f9IccLA+U1tA9GvtU4JrodiXFfYB7jPzzHpRzpglLAjtUV6bB557zwClJezTqnAiYnQA==}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
+      define-properties: 1.2.0
       es-abstract: 1.22.1
     dev: true
 
@@ -13422,7 +13455,7 @@ packages:
     dependencies:
       jsonc-parser: 3.1.0
       vscode-languageserver-textdocument: 1.0.5
-      vscode-languageserver-types: 3.17.2
+      vscode-languageserver-types: 3.17.3
       vscode-nls: 5.0.1
       vscode-uri: 3.0.3
     dev: true
@@ -13441,10 +13474,6 @@ packages:
 
   /vscode-languageserver-textdocument@1.0.5:
     resolution: {integrity: sha512-1ah7zyQjKBudnMiHbZmxz5bYNM9KKZYz+5VQLj+yr8l+9w3g+WAhCkUkWbhMEdC5u0ub4Ndiye/fDyS8ghIKQg==}
-    dev: true
-
-  /vscode-languageserver-types@3.17.2:
-    resolution: {integrity: sha512-zHhCWatviizPIq9B7Vh9uvrH6x3sK8itC84HkamnBWoDFJtzBf7SWlpLCZUit72b3os45h6RWQNC9xHRDF8dRA==}
     dev: true
 
   /vscode-languageserver-types@3.17.3:
