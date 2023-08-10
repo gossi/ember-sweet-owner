@@ -38,7 +38,8 @@
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
     "lint:types": "glint",
-    "release": "pnpm build && release-it",
+    "prepack": "pnpm build",
+    "release": "release-it",
     "start": "concurrently 'npm:start:*'",
     "start:js": "rollup --config -w --no-watch.clearScreen",
     "start:types": "glint --declaration -w"
