@@ -160,8 +160,8 @@ importers:
         specifier: ^0.6.0
         version: 0.6.0
       '@gossi/config-template-lint':
-        specifier: ^0.5.1
-        version: 0.5.1(ember-template-lint@5.11.1)(prettier@3.0.1)
+        specifier: ^0.6.0
+        version: 0.6.0(ember-template-lint@5.11.1)(prettier@3.0.1)
       '@tsconfig/ember':
         specifier: ^3.0.0
         version: 3.0.0
@@ -2515,8 +2515,8 @@ packages:
     engines: {node: 16.* || >= 18.*}
     dev: true
 
-  /@gossi/config-template-lint@0.5.1(ember-template-lint@5.11.1)(prettier@3.0.1):
-    resolution: {integrity: sha512-N0JJFYwUbrFBGrIAHTNTUEjpzKcvGozMfqquNasBA9hETR3q8dn/ONTnYF9UbXN5AM69/18yJjO4uzTmj6kfBg==}
+  /@gossi/config-template-lint@0.6.0(ember-template-lint@5.11.1)(prettier@3.0.1):
+    resolution: {integrity: sha512-DXzHzJv/+nb6khTKGVF15ERf/Ef9e+RYQQWjyX9dc+KCLghYsSENrlyxKcXm3dknQnfUXwtYA9rdCHaroRQHLA==}
     engines: {node: 16.* || >= 18.*}
     peerDependencies:
       ember-template-lint: ^5.0.0
