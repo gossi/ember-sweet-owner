@@ -51,8 +51,8 @@ importers:
         specifier: ^0.6.0
         version: 0.6.0(@babel/core@7.22.10)(@babel/eslint-parser@7.22.10)(@typescript-eslint/eslint-plugin@5.62.0)(@typescript-eslint/parser@5.62.0)(eslint-plugin-ember@11.10.0)(eslint-plugin-import@2.28.0)(eslint@8.46.0)(prettier@3.0.1)
       '@gossi/config-prettier':
-        specifier: ^0.5.1
-        version: 0.5.1(prettier@3.0.1)
+        specifier: ^0.6.0
+        version: 0.6.0(prettier@3.0.1)
       '@gossi/config-targets':
         specifier: ^0.5.1
         version: 0.5.1
@@ -154,8 +154,8 @@ importers:
         specifier: ^0.6.0
         version: 0.6.0(@babel/core@7.22.10)(@babel/eslint-parser@7.22.10)(@typescript-eslint/eslint-plugin@5.62.0)(@typescript-eslint/parser@5.62.0)(eslint-plugin-ember@11.10.0)(eslint-plugin-import@2.28.0)(eslint@8.46.0)(prettier@3.0.1)
       '@gossi/config-prettier':
-        specifier: ^0.5.1
-        version: 0.5.1(prettier@3.0.1)
+        specifier: ^0.6.0
+        version: 0.6.0(prettier@3.0.1)
       '@gossi/config-targets':
         specifier: ^0.5.1
         version: 0.5.1
@@ -2498,8 +2498,8 @@ packages:
       - supports-color
     dev: true
 
-  /@gossi/config-prettier@0.5.1(prettier@3.0.1):
-    resolution: {integrity: sha512-IOFm4pb53h0dbrlExPGRHdJ4phGIAv/PCEutHKSuUInR6Mg+VMINPFJ/rO6yDcLLouXLUz4lPXU1hDJPGS1xJA==}
+  /@gossi/config-prettier@0.6.0(prettier@3.0.1):
+    resolution: {integrity: sha512-TcE64L/hE9tAQ8MsiZdzMTBJkqNnJm/TEpDxZ1xQN4yTw+AwrcB7YEHCwlDbZNVV0Tg1PSpn46GaR7imggAgtw==}
     engines: {node: 16.* || >= 18.*}
     peerDependencies:
       prettier: ^3.0.0
