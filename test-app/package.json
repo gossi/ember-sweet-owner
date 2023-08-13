@@ -44,7 +44,7 @@
     "@glint/environment-ember-template-imports": "1.0.2",
     "@gossi/config-eslint": "^0.6.0",
     "@gossi/config-prettier": "^0.6.0",
-    "@gossi/config-targets": "^0.5.1",
+    "@gossi/config-targets": "^0.6.0",
     "@gossi/config-template-lint": "^0.5.1",
     "@tsconfig/ember": "^3.0.0",
     "@types/qunit": "^2.19.6",
