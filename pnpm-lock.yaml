@@ -187,14 +187,14 @@ importers:
         specifier: ^2.6.3
         version: 2.6.3(@glint/template@1.0.2)(webpack@5.88.2)
       ember-cli:
-        specifier: ~5.1.0
-        version: 5.1.0
+        specifier: ~5.2.0
+        version: 5.2.0
       ember-cli-babel:
         specifier: ^8.0.0
         version: 8.0.0(@babel/core@7.22.10)
       ember-cli-dependency-checker:
         specifier: ^3.3.2
-        version: 3.3.2(ember-cli@5.1.0)
+        version: 3.3.2(ember-cli@5.2.0)
       ember-cli-htmlbars:
         specifier: ^6.3.0
         version: 6.3.0
@@ -6167,10 +6167,6 @@ packages:
     engines: {node: '>=6.0'}
     dev: true
 
-  /ci-info@3.3.2:
-    resolution: {integrity: sha512-xmDt/QIAdeZ9+nfdPsaBCpMvHNLFiLdjj59qjqn+6iPe6YmHGQ35sBnQ8uslRBXFmXkiZQOJRjvQeoGppoTjjg==}
-    dev: true
-
   /ci-info@3.8.0:
     resolution: {integrity: sha512-eXTggHWSooYhq49F2opQhuHWgzucfF2YgODK4e1566GQs5BIfP30B0oenwBJHfWxAs2fyPB1s7Mg949zLf61Yw==}
     engines: {node: '>=8'}
@@ -7307,14 +7303,14 @@ packages:
       - supports-color
     dev: true
 
-  /ember-cli-dependency-checker@3.3.2(ember-cli@5.1.0):
+  /ember-cli-dependency-checker@3.3.2(ember-cli@5.2.0):
     resolution: {integrity: sha512-PwkrW5oYsdPWwt+0Tojufmv/hxVETTjkrEdK7ANQB2VSnqpA5UcYubwpQM9ONuR2J8wyNDMwEHlqIrk/FYtBsQ==}
     engines: {node: '>= 6'}
     peerDependencies:
       ember-cli: ^3.2.0 || >=4.0.0
     dependencies:
       chalk: 2.4.2
-      ember-cli: 5.1.0
+      ember-cli: 5.2.0
       find-yarn-workspace-root: 1.2.1
       is-git-url: 1.0.0
       resolve: 1.22.4
@@ -7481,8 +7477,8 @@ packages:
       - supports-color
     dev: true
 
-  /ember-cli@5.1.0:
-    resolution: {integrity: sha512-TlnfO+V5lZqRQ7eGXt+P8q24Cu90GSXXAS/2NasaCtC1WY7eVzhfMsoNZiOw3Pe1CaB7i5fPDR8jAMsTwx8Tpg==}
+  /ember-cli@5.2.0:
+    resolution: {integrity: sha512-VZ/yhnM9tNWxZQQ+3dGe0MkUhkcS51W7WQWxlIr+NxlqG+WLe6qi8IKHElXwI3nY/Gbh5kSU5rF31WmGeGXjbg==}
     engines: {node: '>= 16'}
     hasBin: true
     dependencies:
@@ -10215,7 +10211,7 @@ packages:
     resolution: {integrity: sha512-ZYvCgrefwqoQ6yTyYUbQu64HsITZ3NfKX1lzaEYdkTDcfKzzCI/wthRRYKkdjHKFVgNiXKAKm65Zo1pk2as/QQ==}
     hasBin: true
     dependencies:
-      ci-info: 3.3.2
+      ci-info: 3.8.0
     dev: true
 
   /is-core-module@2.10.0:
