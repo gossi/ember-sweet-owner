@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@embroider/addon-shim": "^1.8.6",
-    "inflection": "^2.0.1"
+    "inflection": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.22.10",
