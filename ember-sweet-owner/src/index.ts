@@ -1,4 +1,5 @@
 import { type Registry as Services } from '@ember/service';
+import { dependencySatisfies, importSync, macroCondition } from '@embroider/macros';
 
 import { singularize } from 'inflection';
 
@@ -46,6 +47,9 @@ function sweetenOwner(owner: Owner): SweetOwner {
 
   return new Proxy(owner, {
     get(_target: Owner, container: string) {
+      if (container === 'service') {
+      }
+
       if (!CACHE.has(owner)) {
         CACHE.set(owner, new Proxy(owner, new OwnerHandler(owner, singularize(container))));
       }

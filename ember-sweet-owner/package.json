@@ -42,7 +42,8 @@
   },
   "dependencies": {
     "@embroider/addon-shim": "^1.8.6",
-    "inflection": "^3.0.0"
+    "inflection": "^3.0.0",
+    "@embroider/macros": "^1.13.5"
   },
   "devDependencies": {
     "@babel/core": "^7.22.10",
@@ -65,6 +66,7 @@
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
     "concurrently": "^8.2.0",
+    "ember-polaris-service": "^0.5.0",
     "ember-source": "~5.6.0",
     "eslint": "^8.46.0",
     "eslint-plugin-ember": "^11.10.0",
