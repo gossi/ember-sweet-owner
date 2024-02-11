@@ -1,11 +1,13 @@
 import Service from '@ember/service';
 import { module, test } from 'qunit';
+import { dependencySatisfies, importSync, macroCondition } from '@embroider/macros';
 
 import { sweetenOwner } from 'ember-sweet-owner';
 
 import { setupTest } from '../helpers';
 
 import type { TestContext } from '@ember/test-helpers';
+import type PolarisService from 'ember-polaris-service';
 
 class FooService extends Service {
   prop = 'foo';
@@ -38,4 +40,21 @@ module('Unit | Sweet Owner', function (hooks) {
     assert.ok(foo);
     assert.strictEqual(foo.prop, 'foo');
   });
+
+  if (macroCondition(dependencySatisfies('ember-polaris-service', '*'))) {
+    test('polaris-service', function (this: TestContext, assert) {
+      const { default: PService } = importSync('ember-polaris-service') as {
+        default: typeof PolarisService;
+      };
+
+      class TestService extends PService {
+        hi = 42;
+      }
+
+      const container = sweetenOwner(this.owner);
+      const testService = container.service(TestService) as TestService;
+
+      assert.equal(testService.hi, 42);
+    });
+  }
 });

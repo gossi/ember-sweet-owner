@@ -44,6 +44,22 @@ module.exports = async function () {
         }
       },
       {
+        name: 'ember-5.4',
+        npm: {
+          devDependencies: {
+            'ember-source': '~5.4.0'
+          }
+        }
+      },
+      {
+        name: 'without-polaris-service',
+        npm: {
+          devDependencies: {
+            'ember-polaris-service': null
+          }
+        }
+      },
+      {
         name: 'ember-release',
         npm: {
           devDependencies: {

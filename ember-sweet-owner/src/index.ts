@@ -4,6 +4,8 @@ import { dependencySatisfies, importSync, macroCondition } from '@embroider/macr
 import { singularize } from 'inflection';
 
 import type Owner from '@ember/owner';
+import type PolarisService from 'ember-polaris-service';
+import type { service as polarisService } from 'ember-polaris-service';
 
 // Related RFC/Types:
 // https://rfcs.emberjs.com/id/0585-improved-ember-registry-apis/#appendix-typescript
@@ -16,7 +18,7 @@ interface NamedSweetOwner {
   readonly services: Services;
 }
 
-type SweetOwner = UnknownSweetOwner & NamedSweetOwner;
+interface SweetOwner extends UnknownSweetOwner, NamedSweetOwner {}
 
 type Lookup = `${string}:${string}`;
 
@@ -47,7 +49,20 @@ function sweetenOwner(owner: Owner): SweetOwner {
 
   return new Proxy(owner, {
     get(_target: Owner, container: string) {
-      if (container === 'service') {
+      if (macroCondition(dependencySatisfies('ember-polaris-service', '*'))) {
+        if (container === 'service') {
+          const { service, setScope } = importSync('ember-polaris-service') as {
+            service: typeof polarisService;
+            setScope: (object: object, scope: Owner) => object;
+          };
+          const scope = {};
+
+          setScope(scope, owner);
+
+          console.log('hello from sweet-owner with polaris service', owner);
+
+          return (lookup: typeof PolarisService) => service(scope, lookup);
+        }
       }
 
       if (!CACHE.has(owner)) {
