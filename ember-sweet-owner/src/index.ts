@@ -59,8 +59,6 @@ function sweetenOwner(owner: Owner): SweetOwner {
 
           setScope(scope, owner);
 
-          console.log('hello from sweet-owner with polaris service', owner);
-
           return (lookup: typeof PolarisService) => service(scope, lookup);
         }
       }

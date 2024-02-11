@@ -43,6 +43,7 @@ module('Unit | Sweet Owner', function (hooks) {
 
   if (macroCondition(dependencySatisfies('ember-polaris-service', '*'))) {
     test('polaris-service', function (this: TestContext, assert) {
+      // eslint-disable-next-line @typescript-eslint/naming-convention
       const { default: PService } = importSync('ember-polaris-service') as {
         default: typeof PolarisService;
       };
