@@ -72,4 +72,5 @@ function sweetenOwner(owner: Owner): SweetOwner {
   }) as unknown as SweetOwner;
 }
 
-export { sweetenOwner, SweetOwner };
+export { sweetenOwner };
+export type { SweetOwner };
