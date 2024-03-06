@@ -70,7 +70,7 @@ importers:
         version: 15.2.3(rollup@4.12.0)
       '@tsconfig/ember':
         specifier: ^3.0.3
-        version: 3.0.4
+        version: 3.0.5
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.62.0
         version: 5.62.0(@typescript-eslint/parser@5.62.0)(eslint@8.57.0)(typescript@5.3.3)
@@ -164,7 +164,7 @@ importers:
         version: 0.7.0(ember-template-lint@5.13.0)(prettier@3.2.5)
       '@tsconfig/ember':
         specifier: ^3.0.0
-        version: 3.0.4
+        version: 3.0.5
       '@types/qunit':
         specifier: ^2.19.6
         version: 2.19.10
@@ -3436,8 +3436,8 @@ packages:
     resolution: {integrity: sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==}
     dev: true
 
-  /@tsconfig/ember@3.0.4:
-    resolution: {integrity: sha512-BpOAczFhUKCfBZERuLVBHEM0QfaldGuQYdW91nowdk8WGN1DE5oNFOBXJdJed00n0vcB0+hiJovJgs/QwuP6EQ==}
+  /@tsconfig/ember@3.0.5:
+    resolution: {integrity: sha512-5fccd/42M+ejFxAqA8uN+ZlYPhIwZFM2f3xpkmvdyQVrgBkJnsWqnCEXCBfhi6d+fBVDNnRNWiUwczJyFzmK1Q==}
     dev: true
 
   /@types/body-parser@1.19.2:
