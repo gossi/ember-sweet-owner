@@ -57,8 +57,8 @@ importers:
         specifier: ^0.8.0
         version: 0.8.0(prettier@3.2.5)
       '@gossi/config-targets':
-        specifier: ^0.8.0
-        version: 0.8.0
+        specifier: ^0.9.0
+        version: 0.9.0
       '@release-it-plugins/lerna-changelog':
         specifier: ^6.1.0
         version: 6.1.0(release-it@17.1.1)
@@ -157,8 +157,8 @@ importers:
         specifier: ^0.8.0
         version: 0.8.0(prettier@3.2.5)
       '@gossi/config-targets':
-        specifier: ^0.8.0
-        version: 0.8.0
+        specifier: ^0.9.0
+        version: 0.9.0
       '@gossi/config-template-lint':
         specifier: ^0.8.0
         version: 0.8.0(ember-template-lint@5.13.0)(prettier@3.2.5)
@@ -2382,8 +2382,8 @@ packages:
       - supports-color
     dev: true
 
-  /@gossi/config-targets@0.8.0:
-    resolution: {integrity: sha512-s3LZp4v76QGgqmdHe0dtZ3bsKiHS3KGjtYcxTQeXiixzdflLYihvFDk2u5Z1QNtIdW2cx4fzqgwaS2UxDVOF2w==}
+  /@gossi/config-targets@0.9.0:
+    resolution: {integrity: sha512-F4FKbFDmiVYUnQtF0yX/Kgj2aUN9BF6YX3dkM642Xfn9ARzQq1imUpGIlri1emfjgb1YP8JMUhf+/wQ9JhWwhw==}
     engines: {node: 16.* || >= 18.*}
     dev: true
 
