@@ -12,7 +12,7 @@ importers:
     dependencies:
       '@embroider/addon-shim':
         specifier: ^1.8.7
-        version: 1.8.8
+        version: 1.8.9
       '@embroider/macros':
         specifier: ^1.13.5
         version: 1.16.1(@glint/template@1.4.0)
@@ -1408,8 +1408,8 @@ packages:
     engines: {node: 12.* || 14.* || >= 16}
     hasBin: true
 
-  '@embroider/addon-shim@1.8.8':
-    resolution: {integrity: sha512-+SkD/JJqnmCBJpsjPu419iNA9kQdqojNBrldE7f5H80A4FWUGRO9s622+SwdzKiXCaMWcNeww7Ah7CL/YZPoHg==}
+  '@embroider/addon-shim@1.8.9':
+    resolution: {integrity: sha512-qyN64T1jMHZ99ihlk7VFHCWHYZHLE1DOdHi0J7lmn5waV1DoW7gD8JLi1i7FregzXtKhbDc7shyEmTmWPTs8MQ==}
     engines: {node: 12.* || 14.* || >= 16}
 
   '@embroider/core@3.4.7':
@@ -6766,11 +6766,6 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-  semver@7.6.1:
-    resolution: {integrity: sha512-f/vbBsu+fOiYt+lmwZV0rVwJScl46HppnOA1ZvIuBWKOTlllpyJ3bfVax76/OrhCH38dyxoDIA8K7uB963IYgA==}
-    engines: {node: '>=10'}
-    hasBin: true
-
   semver@7.6.2:
     resolution: {integrity: sha512-FNAIBWCx9qcRhoHcgcJ0gvU7SN1lYU2ZXuSfl04bSC5OpvDHFyJCjdNHomPXxjQlCBU67YW64PzY7/VIEH7F2w==}
     engines: {node: '>=10'}
@@ -9285,12 +9280,12 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@embroider/addon-shim@1.8.8':
+  '@embroider/addon-shim@1.8.9':
     dependencies:
       '@embroider/shared-internals': 2.6.0
       broccoli-funnel: 3.0.8
       common-ancestor-path: 1.0.1
-      semver: 7.6.1
+      semver: 7.6.2
     transitivePeerDependencies:
       - supports-color
 
@@ -12224,14 +12219,14 @@ snapshots:
 
   ember-polaris-service@0.5.0:
     dependencies:
-      '@embroider/addon-shim': 1.8.8
+      '@embroider/addon-shim': 1.8.9
     transitivePeerDependencies:
       - supports-color
 
   ember-qunit@8.0.2(@ember/test-helpers@3.3.0(@glint/template@1.4.0)(ember-source@5.8.0(@babel/core@7.24.5)(@glimmer/component@1.1.2(@babel/core@7.24.5))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.91.0))(webpack@5.91.0))(@glint/template@1.4.0)(ember-source@5.8.0(@babel/core@7.24.5)(@glimmer/component@1.1.2(@babel/core@7.24.5))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.91.0))(qunit@2.20.1):
     dependencies:
       '@ember/test-helpers': 3.3.0(@glint/template@1.4.0)(ember-source@5.8.0(@babel/core@7.24.5)(@glimmer/component@1.1.2(@babel/core@7.24.5))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.91.0))(webpack@5.91.0)
-      '@embroider/addon-shim': 1.8.8
+      '@embroider/addon-shim': 1.8.9
       '@embroider/macros': 1.16.1(@glint/template@1.4.0)
       ember-cli-test-loader: 3.1.0
       ember-source: 5.8.0(@babel/core@7.24.5)(@glimmer/component@1.1.2(@babel/core@7.24.5))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.91.0)
@@ -15940,8 +15935,6 @@ snapshots:
   semver@7.6.0:
     dependencies:
       lru-cache: 6.0.0
-
-  semver@7.6.1: {}
 
   semver@7.6.2: {}
 
