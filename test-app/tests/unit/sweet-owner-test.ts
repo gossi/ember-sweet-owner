@@ -22,7 +22,7 @@ declare module '@ember/service' {
 module('Unit | Sweet Owner', function (hooks) {
   setupTest(hooks);
 
-  test('can access service from sweet owner', async function (this: TestContext, assert) {
+  test('can access service from sweet owner', function (this: TestContext, assert) {
     this.owner.register('service:foo', FooService);
 
     const container = sweetenOwner(this.owner);
@@ -31,7 +31,7 @@ module('Unit | Sweet Owner', function (hooks) {
     assert.strictEqual(container.services.foo.prop, 'foo');
   });
 
-  test('destructuring', async function (this: TestContext, assert) {
+  test('destructuring', function (this: TestContext, assert) {
     this.owner.register('service:foo', FooService);
 
     const { services } = sweetenOwner(this.owner);
@@ -53,7 +53,7 @@ module('Unit | Sweet Owner', function (hooks) {
       }
 
       const container = sweetenOwner(this.owner);
-      const testService = container.service(TestService) as TestService;
+      const testService = container.service(TestService);
 
       assert.equal(testService.hi, 42);
     });
