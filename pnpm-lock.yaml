@@ -70,7 +70,7 @@ importers:
         version: 15.2.3(rollup@4.10.0)
       '@tsconfig/ember':
         specifier: ^3.0.3
-        version: 3.0.3
+        version: 3.0.8
       '@typescript-eslint/eslint-plugin':
         specifier: ^7.11.0
         version: 7.11.0(@typescript-eslint/parser@7.11.0(eslint@8.57.0)(typescript@5.1.6))(eslint@8.57.0)(typescript@5.1.6)
@@ -164,7 +164,7 @@ importers:
         version: 0.8.0(ember-template-lint@6.0.0)(prettier@3.2.5)
       '@tsconfig/ember':
         specifier: ^3.0.0
-        version: 3.0.0
+        version: 3.0.8
       '@types/qunit':
         specifier: ^2.19.6
         version: 2.19.10
@@ -2123,11 +2123,8 @@ packages:
   '@tootallnate/quickjs-emscripten@0.23.0':
     resolution: {integrity: sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==}
 
-  '@tsconfig/ember@3.0.0':
-    resolution: {integrity: sha512-KF9F9f4i+8LE31OKS014n5uEDt1mB/6ZvyQz/Mam28nAKDTSMBlOWHgTOj0TY8l4BfbEE+BgUuWCSoUHhb2BMw==}
-
-  '@tsconfig/ember@3.0.3':
-    resolution: {integrity: sha512-StVVkcg/VxA+eDzBcTQAcnmmcmg1OxaV41OqFYluqVHpUX28TOD91DGg58n2AMU9ia27zeBBeVQiLsfmzuIV7w==}
+  '@tsconfig/ember@3.0.8':
+    resolution: {integrity: sha512-OVnIsZIt/8q0VEtcdz3rRryNrm6gdJTxXlxefkGIrkZnME0wqslmwHlUEZ7mvh377df9FqBhNKrYNarhCW8zJA==}
 
   '@types/body-parser@1.19.2':
     resolution: {integrity: sha512-ALYone6pm6QmwZoAgeyNksccT9Q4AWZQ6PvfwR37GT6r6FWUPguq6sUmNGSMV2Wr761oQoBxwGGa6DR5o1DC9g==}
@@ -10397,9 +10394,7 @@ snapshots:
 
   '@tootallnate/quickjs-emscripten@0.23.0': {}
 
-  '@tsconfig/ember@3.0.0': {}
-
-  '@tsconfig/ember@3.0.3': {}
+  '@tsconfig/ember@3.0.8': {}
 
   '@types/body-parser@1.19.2':
     dependencies:
