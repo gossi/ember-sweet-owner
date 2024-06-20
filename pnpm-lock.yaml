@@ -15,7 +15,7 @@ importers:
         version: 1.8.9
       '@embroider/macros':
         specifier: ^1.13.5
-        version: 1.16.3(@glint/template@1.4.0)
+        version: 1.16.4(@glint/template@1.4.0)
       inflection:
         specifier: ^3.0.0
         version: 3.0.0
@@ -128,7 +128,7 @@ importers:
         version: 3.2.1(@glint/template@1.4.0)(ember-source@5.9.0(@babel/core@7.24.7)(@glimmer/component@1.1.2(@babel/core@7.24.7))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.92.0))(webpack@5.92.0)
       '@embroider/macros':
         specifier: ^1.13.5
-        version: 1.16.3(@glint/template@1.4.0)
+        version: 1.16.4(@glint/template@1.4.0)
       '@embroider/test-setup':
         specifier: ^4.0.0
         version: 4.0.0(@embroider/core@3.4.10(@glint/template@1.4.0))
@@ -1412,8 +1412,8 @@ packages:
       '@glint/template':
         optional: true
 
-  '@embroider/macros@1.16.3':
-    resolution: {integrity: sha512-WOQjl3aT3I5gG4XDLpCJjrKhNSapgH7FiLtpzM6lGfTFoA90rZojfjf5MELwzqlhjug0U2xLvyjw0l+kiBmDig==}
+  '@embroider/macros@1.16.4':
+    resolution: {integrity: sha512-xGPke1N8uD+RM4RCM1brfPWawDs7aSP1JQ+4VsTp1g2goI7vNtdMRQmKWWUUTqeV/rqk21ENpvy3r2oyufGW1w==}
     engines: {node: 12.* || 14.* || >= 16}
     peerDependencies:
       '@glint/template': ^1.0.0
@@ -2048,6 +2048,9 @@ packages:
 
   '@types/node@20.14.2':
     resolution: {integrity: sha512-xyu6WAMVwv6AKFLB+e/7ySZVr/0zLCzOa7rSpq6jNwpqOrUbcACDWC+53d4n2QHOnDou0fbIsg8wZu/sxrnI4Q==}
+
+  '@types/node@20.14.7':
+    resolution: {integrity: sha512-uTr2m2IbJJucF3KUxgnGOZvYbN0QgkGyWxG6973HCpMYFy2KfcgYuIwkJQMQkt1VbBMlvWRbpshFTLxnxCZjKQ==}
 
   '@types/qs@6.9.7':
     resolution: {integrity: sha512-FGa1F62FT09qcrueBA6qYTrJPVDzah9a+493+o2PCXsesWHIn27G98TsSMs3WPNbZIEj4+VJf6saSFpvD+3Zsw==}
@@ -5047,6 +5050,10 @@ packages:
 
   is-core-module@2.13.1:
     resolution: {integrity: sha512-hHrIjvZsftOsvKSn2TRYl63zvxsgE0K+0mYMoH6gD4omR5IWB2KynivBQczo3+wF1cCkjzvptnI9Q0sPU66ilw==}
+
+  is-core-module@2.14.0:
+    resolution: {integrity: sha512-a5dFJih5ZLYlRtDc0dZWP7RiKr6xIKzmn/oAYCDvdLThadVgyJwlaoQPmRtMSpz+rk0OGAgIu+TcM9HUF0fk1A==}
+    engines: {node: '>= 0.4'}
 
   is-data-descriptor@0.1.4:
     resolution: {integrity: sha512-+w9D5ulSoBNlmw9OHn3U2v51SyoCd0he+bB3xMl62oijhrspxowjU+AIcDY0N3iEJbUEkB15IlMASQsxYigvXg==}
@@ -9437,7 +9444,7 @@ snapshots:
   '@ember/test-helpers@3.2.1(@glint/template@1.4.0)(ember-source@5.9.0(@babel/core@7.24.7)(@glimmer/component@1.1.2(@babel/core@7.24.7))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.92.0))(webpack@5.92.0)':
     dependencies:
       '@ember/test-waiters': 3.0.2
-      '@embroider/macros': 1.16.3(@glint/template@1.4.0)
+      '@embroider/macros': 1.16.4(@glint/template@1.4.0)
       '@simple-dom/interface': 1.4.0
       broccoli-debug: 0.6.5
       broccoli-funnel: 3.0.8
@@ -9535,7 +9542,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@embroider/macros@1.16.3(@glint/template@1.4.0)':
+  '@embroider/macros@1.16.4(@glint/template@1.4.0)':
     dependencies:
       '@embroider/shared-internals': 2.6.1
       assert-never: 1.2.1
@@ -10168,7 +10175,7 @@ snapshots:
     dependencies:
       '@types/http-cache-semantics': 4.0.1
       '@types/keyv': 3.1.4
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       '@types/responselike': 1.0.0
 
   '@types/chai-as-promised@7.1.5':
@@ -10223,7 +10230,7 @@ snapshots:
 
   '@types/fs-extra@5.1.0':
     dependencies:
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
 
   '@types/fs-extra@8.1.2':
     dependencies:
@@ -10262,6 +10269,10 @@ snapshots:
   '@types/ms@0.7.31': {}
 
   '@types/node@20.14.2':
+    dependencies:
+      undici-types: 5.26.5
+
+  '@types/node@20.14.7':
     dependencies:
       undici-types: 5.26.5
 
@@ -12100,7 +12111,7 @@ snapshots:
       '@babel/plugin-proposal-private-methods': 7.18.6(@babel/core@7.24.7)
       '@babel/plugin-transform-class-static-block': 7.23.4(@babel/core@7.24.7)
       '@babel/preset-env': 7.23.9(@babel/core@7.24.7)
-      '@embroider/macros': 1.16.3(@glint/template@1.4.0)
+      '@embroider/macros': 1.16.4(@glint/template@1.4.0)
       '@embroider/shared-internals': 2.6.1
       babel-loader: 8.2.5(@babel/core@7.24.7)(webpack@5.92.0)
       babel-plugin-ember-modules-api-polyfill: 3.5.0
@@ -12141,7 +12152,7 @@ snapshots:
       '@babel/plugin-proposal-private-methods': 7.18.6(@babel/core@7.24.7)
       '@babel/plugin-transform-class-static-block': 7.24.7(@babel/core@7.24.7)
       '@babel/preset-env': 7.24.7(@babel/core@7.24.7)
-      '@embroider/macros': 1.16.3(@glint/template@1.4.0)
+      '@embroider/macros': 1.16.4(@glint/template@1.4.0)
       '@embroider/shared-internals': 2.6.1
       babel-loader: 8.3.0(@babel/core@7.24.7)(webpack@5.92.0)
       babel-plugin-ember-modules-api-polyfill: 3.5.0
@@ -12558,7 +12569,7 @@ snapshots:
     dependencies:
       '@ember/test-helpers': 3.2.1(@glint/template@1.4.0)(ember-source@5.9.0(@babel/core@7.24.7)(@glimmer/component@1.1.2(@babel/core@7.24.7))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.92.0))(webpack@5.92.0)
       '@embroider/addon-shim': 1.8.9
-      '@embroider/macros': 1.16.3(@glint/template@1.4.0)
+      '@embroider/macros': 1.16.4(@glint/template@1.4.0)
       ember-cli-test-loader: 3.1.0
       ember-source: 5.9.0(@babel/core@7.24.7)(@glimmer/component@1.1.2(@babel/core@7.24.7))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.92.0)
       qunit: 2.21.0
@@ -13001,7 +13012,7 @@ snapshots:
   eslint-import-resolver-node@0.3.9:
     dependencies:
       debug: 3.2.7
-      is-core-module: 2.13.1
+      is-core-module: 2.14.0
       resolve: 1.22.8
     transitivePeerDependencies:
       - supports-color
@@ -13111,7 +13122,7 @@ snapshots:
       eslint-import-resolver-node: 0.3.9
       eslint-module-utils: 2.8.1(@typescript-eslint/parser@7.13.0(eslint@8.57.0)(typescript@5.5.2))(eslint-import-resolver-node@0.3.9)(eslint@8.57.0)
       hasown: 2.0.2
-      is-core-module: 2.13.1
+      is-core-module: 2.14.0
       is-glob: 4.0.3
       minimatch: 3.1.2
       object.fromentries: 2.0.8
@@ -14426,6 +14437,10 @@ snapshots:
       has: 1.0.3
 
   is-core-module@2.13.1:
+    dependencies:
+      hasown: 2.0.2
+
+  is-core-module@2.14.0:
     dependencies:
       hasown: 2.0.2
 
@@ -16211,7 +16226,7 @@ snapshots:
 
   resolve@1.22.8:
     dependencies:
-      is-core-module: 2.13.1
+      is-core-module: 2.14.0
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
 
