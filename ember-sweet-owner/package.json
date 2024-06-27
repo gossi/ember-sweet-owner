@@ -60,7 +60,7 @@
     "@babel/plugin-proposal-decorators": "^7.24.6",
     "@babel/preset-typescript": "^7.24.6",
     "@babel/runtime": "^7.24.6",
-    "@embroider/addon-dev": "^4.2.1",
+    "@embroider/addon-dev": "^5.0.0",
     "@glint/core": "^1.4.0",
     "@glint/environment-ember-loose": "^1.4.0",
     "@glint/template": "^1.4.0",
