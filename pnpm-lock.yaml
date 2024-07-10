@@ -54,8 +54,8 @@ importers:
         specifier: ^0.12.0
         version: 0.12.0(@babel/core@7.24.7)(@babel/eslint-parser@7.24.7(@babel/core@7.24.7)(eslint@8.57.0))(@types/eslint@8.56.10)(@typescript-eslint/eslint-plugin@7.15.0(@typescript-eslint/parser@7.15.0(eslint@8.57.0)(typescript@5.5.3))(eslint@8.57.0)(typescript@5.5.3))(@typescript-eslint/parser@7.15.0(eslint@8.57.0)(typescript@5.5.3))(eslint-plugin-ember@12.1.1(@babel/core@7.24.7)(@typescript-eslint/parser@7.15.0(eslint@8.57.0)(typescript@5.5.3))(eslint@8.57.0))(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.15.0(eslint@8.57.0)(typescript@5.5.3))(eslint@8.57.0))(eslint@8.57.0)(prettier@3.3.2)(typescript@5.5.3)
       '@gossi/config-prettier':
-        specifier: ^0.8.0
-        version: 0.8.0(prettier@3.3.2)
+        specifier: ^0.9.0
+        version: 0.9.0(prettier@3.3.2)
       '@gossi/config-targets':
         specifier: ^0.9.0
         version: 0.9.0
@@ -154,8 +154,8 @@ importers:
         specifier: ^0.12.0
         version: 0.12.0(@babel/core@7.24.7)(@babel/eslint-parser@7.24.7(@babel/core@7.24.7)(eslint@8.57.0))(@types/eslint@8.56.10)(@typescript-eslint/eslint-plugin@7.15.0(@typescript-eslint/parser@7.15.0(eslint@8.57.0)(typescript@5.5.3))(eslint@8.57.0)(typescript@5.5.3))(@typescript-eslint/parser@7.15.0(eslint@8.57.0)(typescript@5.5.3))(eslint-plugin-ember@12.1.1(@babel/core@7.24.7)(@typescript-eslint/parser@7.15.0(eslint@8.57.0)(typescript@5.5.3))(eslint@8.57.0))(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.15.0(eslint@8.57.0)(typescript@5.5.3))(eslint@8.57.0))(eslint@8.57.0)(prettier@3.3.2)(typescript@5.5.3)
       '@gossi/config-prettier':
-        specifier: ^0.8.0
-        version: 0.8.0(prettier@3.3.2)
+        specifier: ^0.9.0
+        version: 0.9.0(prettier@3.3.2)
       '@gossi/config-targets':
         specifier: ^0.9.0
         version: 0.9.0
@@ -1644,8 +1644,8 @@ packages:
       eslint-plugin-storybook:
         optional: true
 
-  '@gossi/config-prettier@0.8.0':
-    resolution: {integrity: sha512-iwhdCsLUL0Rttkq/CGWOOIy95kOEEfnr2H7N/STqDEdSLOh7I+CYahevyClFRy+lz5cVvwqGKK1bnwqXDLkTZQ==}
+  '@gossi/config-prettier@0.9.0':
+    resolution: {integrity: sha512-mkqTbNWOmKurB72ajCPAzeQMmKz+gs04teVriCHUJxFK41+1Usrc9gD59x8bCCABVX11C9f8HPIdyV1FGMELdQ==}
     engines: {node: 16.* || >= 18.*}
     peerDependencies:
       prettier: ^3.0.0
@@ -9635,7 +9635,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@gossi/config-prettier@0.8.0(prettier@3.3.2)':
+  '@gossi/config-prettier@0.9.0(prettier@3.3.2)':
     dependencies:
       prettier: 3.3.2
       prettier-plugin-ember-template-tag: 2.0.2(prettier@3.3.2)
