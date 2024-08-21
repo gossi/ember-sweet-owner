@@ -4,7 +4,7 @@
   "license": "MIT",
   "author": "Thomas Gossmann",
   "volta": {
-    "node": "20.16.0",
+    "node": "20.17.0",
     "pnpm": "9.7.1"
   }
 }
