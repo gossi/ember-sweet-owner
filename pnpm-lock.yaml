@@ -79,7 +79,7 @@ importers:
         version: 7.18.0(eslint@8.57.0)(typescript@5.6.2)
       concurrently:
         specifier: ^9.0.0
-        version: 9.0.0
+        version: 9.0.1
       ember-polaris-service:
         specifier: ^0.5.0
         version: 0.5.0
@@ -182,7 +182,7 @@ importers:
         version: 3.0.0
       concurrently:
         specifier: ^9.0.0
-        version: 9.0.0
+        version: 9.0.1
       ember-auto-import:
         specifier: ^2.7.2
         version: 2.7.4(@glint/template@1.4.0)(webpack@5.94.0)
@@ -3308,8 +3308,8 @@ packages:
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
-  concurrently@9.0.0:
-    resolution: {integrity: sha512-iAxbsDeUkn8E/4+QalT7T3WvlyTfmsoez+19lbbcsxZdOEMfBukd8LA30KYez2UR5xkKFzbcqXIZy5RisCbaxw==}
+  concurrently@9.0.1:
+    resolution: {integrity: sha512-wYKvCd/f54sTXJMSfV6Ln/B8UrfLBKOYa+lzc6CHay3Qek+LorVSBdMVfyewFhRbH0Rbabsk4D+3PL/VjQ5gzg==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -4147,8 +4147,8 @@ packages:
     resolution: {integrity: sha512-QCOllgZJtaUo9miYBcLChTUaHNjJF3PYs1VidD7AwiEj1kYxKeQTctLAezAOH5ZKRH0g2IgPn6KwB4IT8iRpvA==}
     engines: {node: '>= 0.4'}
 
-  escalade@3.1.2:
-    resolution: {integrity: sha512-ErCHMCae19vR8vQGe50xIsVomy19rg6gFu3+r3jkEO46suLMWBksvVyoGgQV+jOfl84ZSOSlmv6Gxa89PmTGmA==}
+  escalade@3.2.0:
+    resolution: {integrity: sha512-WUj2qlxaQtO4g6Pq5c29GTcWGDyd8itL8zTlipgECz3JesAiiOKotd8JU6otB3PACgG6xkJUyVhboMS+bje/jA==}
     engines: {node: '>=6'}
 
   escape-goat@4.0.0:
@@ -7517,6 +7517,9 @@ packages:
 
   tslib@2.6.3:
     resolution: {integrity: sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==}
+
+  tslib@2.7.0:
+    resolution: {integrity: sha512-gLXCKdN1/j47AiHiOkJN69hJmcbGTHI0ImLmbYLHykhgeN0jVGola9yVjFgzCUklsZQMW55o+dW7IXv3RCXDzA==}
 
   type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
@@ -11125,7 +11128,7 @@ snapshots:
 
   ast-types@0.13.4:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.7.0
 
   async-disk-cache@1.3.5:
     dependencies:
@@ -12090,7 +12093,7 @@ snapshots:
 
   concat-map@0.0.1: {}
 
-  concurrently@9.0.0:
+  concurrently@9.0.1:
     dependencies:
       chalk: 4.1.2
       lodash: 4.17.21
@@ -13216,7 +13219,7 @@ snapshots:
       is-date-object: 1.0.5
       is-symbol: 1.0.4
 
-  escalade@3.1.2: {}
+  escalade@3.2.0: {}
 
   escape-goat@4.0.0: {}
 
@@ -16418,7 +16421,7 @@ snapshots:
 
   rxjs@7.8.1:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.7.0
 
   sade@1.8.1:
     dependencies:
@@ -16929,7 +16932,7 @@ snapshots:
   synckit@0.8.8:
     dependencies:
       '@pkgr/core': 0.1.1
-      tslib: 2.6.3
+      tslib: 2.7.0
 
   tap-parser@7.0.0:
     dependencies:
@@ -17189,6 +17192,8 @@ snapshots:
 
   tslib@2.6.3: {}
 
+  tslib@2.7.0: {}
+
   type-check@0.4.0:
     dependencies:
       prelude-ls: 1.2.1
@@ -17331,13 +17336,13 @@ snapshots:
   update-browserslist-db@1.1.0(browserslist@4.23.2):
     dependencies:
       browserslist: 4.23.2
-      escalade: 3.1.2
+      escalade: 3.2.0
       picocolors: 1.0.1
 
   update-browserslist-db@1.1.0(browserslist@4.23.3):
     dependencies:
       browserslist: 4.23.3
-      escalade: 3.1.2
+      escalade: 3.2.0
       picocolors: 1.0.1
 
   update-notifier@7.1.0:
@@ -17660,7 +17665,7 @@ snapshots:
   yargs@16.2.0:
     dependencies:
       cliui: 7.0.4
-      escalade: 3.1.2
+      escalade: 3.2.0
       get-caller-file: 2.0.5
       require-directory: 2.1.1
       string-width: 4.2.3
@@ -17670,7 +17675,7 @@ snapshots:
   yargs@17.7.2:
     dependencies:
       cliui: 8.0.1
-      escalade: 3.1.2
+      escalade: 3.2.0
       get-caller-file: 2.0.5
       require-directory: 2.1.1
       string-width: 4.2.3
