@@ -185,7 +185,7 @@ importers:
         version: 9.0.1
       ember-auto-import:
         specifier: ^2.7.2
-        version: 2.8.0(@glint/template@1.4.0)(webpack@5.94.0)
+        version: 2.8.1(@glint/template@1.4.0)(webpack@5.94.0)
       ember-cli:
         specifier: ~5.11.0
         version: 5.11.0(handlebars@4.7.8)(underscore@1.13.4)
@@ -2734,6 +2734,13 @@ packages:
       '@babel/core': ^7.0.0
       webpack: '>=2'
 
+  babel-loader@8.4.1:
+    resolution: {integrity: sha512-nXzRChX+Z1GoE6yWavBQg6jDslyFF3SDjl2paADuoQtQW10JqShJt62R6eJQ5m/pjJFDT8xgKIWSP85OY8eXeA==}
+    engines: {node: '>= 8.9'}
+    peerDependencies:
+      '@babel/core': ^7.0.0
+      webpack: '>=2'
+
   babel-plugin-debug-macros@0.2.0:
     resolution: {integrity: sha512-Wpmw4TbhR3Eq2t3W51eBAQSdKlr+uAyF0GI4GtPfMCD12Y4cIdpKC9l0RjNTH/P9isFypSqqewMPm7//fnZlNA==}
     engines: {node: '>=4'}
@@ -3888,8 +3895,8 @@ packages:
     resolution: {integrity: sha512-6CdXSegJJc8nwwK7+1lIcBUnMVrJRNd4ZdMgcKbCAwPvcGxMgRVBddSzrX/+q/UuflvTEO26Dk1g7Z6KHMXUhw==}
     engines: {node: 12.* || 14.* || >= 16}
 
-  ember-auto-import@2.8.0:
-    resolution: {integrity: sha512-0GNLkVQOzDGYygybqKXJDOQRComIbkrptX1l7ptk6tapCKFgqYEZWkJH4t+EmefGWOtKfvvqos6HQ5GtsdH4pg==}
+  ember-auto-import@2.8.1:
+    resolution: {integrity: sha512-R5RpJmhycU6YKryzsIL/wP42r0e2PPfLRsFECoGvb1st2eEnU1Q7XyLVC1txd/XvURfu7x3Z7hKtZtYUxy61oQ==}
     engines: {node: 12.* || 14.* || >= 16}
 
   ember-cli-babel-plugin-helpers@1.1.1:
@@ -11226,6 +11233,15 @@ snapshots:
       schema-utils: 2.7.1
       webpack: 5.94.0
 
+  babel-loader@8.4.1(@babel/core@7.25.2)(webpack@5.94.0):
+    dependencies:
+      '@babel/core': 7.25.2
+      find-cache-dir: 3.3.2
+      loader-utils: 2.0.4
+      make-dir: 3.1.0
+      schema-utils: 2.7.1
+      webpack: 5.94.0
+
   babel-plugin-debug-macros@0.2.0(@babel/core@7.25.2):
     dependencies:
       '@babel/core': 7.25.2
@@ -12554,7 +12570,7 @@ snapshots:
       - supports-color
       - webpack
 
-  ember-auto-import@2.8.0(@glint/template@1.4.0)(webpack@5.94.0):
+  ember-auto-import@2.8.1(@glint/template@1.4.0)(webpack@5.94.0):
     dependencies:
       '@babel/core': 7.25.2
       '@babel/plugin-proposal-class-properties': 7.18.6(@babel/core@7.25.2)
@@ -12564,7 +12580,7 @@ snapshots:
       '@babel/preset-env': 7.25.4(@babel/core@7.25.2)
       '@embroider/macros': 1.16.6(@glint/template@1.4.0)
       '@embroider/shared-internals': 2.6.3
-      babel-loader: 8.3.0(@babel/core@7.25.2)(webpack@5.94.0)
+      babel-loader: 8.4.1(@babel/core@7.25.2)(webpack@5.94.0)
       babel-plugin-ember-modules-api-polyfill: 3.5.0
       babel-plugin-ember-template-compilation: 2.3.0
       babel-plugin-htmlbars-inline-precompile: 5.3.1
