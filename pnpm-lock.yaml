@@ -161,7 +161,7 @@ importers:
         version: 0.9.1
       '@gossi/config-template-lint':
         specifier: ^0.8.0
-        version: 0.8.0(ember-template-lint@6.0.0)(prettier@3.3.3)
+        version: 0.8.1(ember-template-lint@6.0.0)(prettier@3.3.3)
       '@tsconfig/ember':
         specifier: ^3.0.0
         version: 3.0.0
@@ -2026,8 +2026,8 @@ packages:
     resolution: {integrity: sha512-e50uYjsvZUE45kc/uKQddNFd8u+jJloKmdcl8X/tlJssf8mPPM3/1n2TeDaoVM16IHia+ikTkzRc6lg6DV7SLQ==}
     engines: {node: 16.* || >= 18.*}
 
-  '@gossi/config-template-lint@0.8.0':
-    resolution: {integrity: sha512-tfAvJYIjES/GdNUbpRoKBpUNItwop7ZaBnXUq3kY3zZY1I8KVayM8rr606h8HMcX+bYbFlRiAZ/7p4SQq/08EA==}
+  '@gossi/config-template-lint@0.8.1':
+    resolution: {integrity: sha512-mjoez1/iSkBy352QlGwGTnGiP9xitfXDFdPaF2GQev95brC7pEKvax8KuDaBMJd3Tkr0VRII3FkvZz9HiIFkfA==}
     engines: {node: 16.* || >= 18.*}
     peerDependencies:
       ember-template-lint: ^6.0.0
@@ -10399,7 +10399,7 @@ snapshots:
 
   '@gossi/config-targets@0.9.1': {}
 
-  '@gossi/config-template-lint@0.8.0(ember-template-lint@6.0.0)(prettier@3.3.3)':
+  '@gossi/config-template-lint@0.8.1(ember-template-lint@6.0.0)(prettier@3.3.3)':
     dependencies:
       ember-template-lint: 6.0.0
       ember-template-lint-plugin-prettier: 5.0.0(ember-template-lint@6.0.0)(prettier@3.3.3)
