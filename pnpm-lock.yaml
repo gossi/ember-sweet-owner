@@ -42,7 +42,7 @@ importers:
         specifier: ^6.0.1
         version: 6.0.1(@glint/template@1.5.0)(rollup@4.24.0)
       '@glint/core':
-        specifier: ^1.4.0
+        specifier: ^1.5.0
         version: 1.5.0(typescript@5.6.3)
       '@glint/environment-ember-loose':
         specifier: ^1.4.0
@@ -139,7 +139,7 @@ importers:
         specifier: ^1.1.2
         version: 1.1.2
       '@glint/core':
-        specifier: ^1.4.0
+        specifier: ^1.5.0
         version: 1.5.0(typescript@5.6.3)
       '@glint/environment-ember-loose':
         specifier: ^1.4.0
