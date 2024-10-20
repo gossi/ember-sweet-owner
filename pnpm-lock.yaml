@@ -58,7 +58,7 @@ importers:
         version: 0.9.1(prettier@3.3.3)
       '@gossi/config-targets':
         specifier: ^0.9.0
-        version: 0.9.0
+        version: 0.9.1
       '@release-it-plugins/lerna-changelog':
         specifier: ^7.0.0
         version: 7.0.0(release-it@17.10.0(typescript@5.6.3))
@@ -158,7 +158,7 @@ importers:
         version: 0.9.1(prettier@3.3.3)
       '@gossi/config-targets':
         specifier: ^0.9.0
-        version: 0.9.0
+        version: 0.9.1
       '@gossi/config-template-lint':
         specifier: ^0.8.0
         version: 0.8.0(ember-template-lint@6.0.0)(prettier@3.3.3)
@@ -2022,8 +2022,8 @@ packages:
     peerDependencies:
       prettier: ^3.0.0
 
-  '@gossi/config-targets@0.9.0':
-    resolution: {integrity: sha512-F4FKbFDmiVYUnQtF0yX/Kgj2aUN9BF6YX3dkM642Xfn9ARzQq1imUpGIlri1emfjgb1YP8JMUhf+/wQ9JhWwhw==}
+  '@gossi/config-targets@0.9.1':
+    resolution: {integrity: sha512-e50uYjsvZUE45kc/uKQddNFd8u+jJloKmdcl8X/tlJssf8mPPM3/1n2TeDaoVM16IHia+ikTkzRc6lg6DV7SLQ==}
     engines: {node: 16.* || >= 18.*}
 
   '@gossi/config-template-lint@0.8.0':
@@ -10397,7 +10397,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@gossi/config-targets@0.9.0': {}
+  '@gossi/config-targets@0.9.1': {}
 
   '@gossi/config-template-lint@0.8.0(ember-template-lint@6.0.0)(prettier@3.3.3)':
     dependencies:
