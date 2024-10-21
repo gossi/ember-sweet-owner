@@ -54,10 +54,10 @@ importers:
         specifier: ^0.13.0
         version: 0.13.0(@babel/core@7.25.8)(@babel/eslint-parser@7.25.8(@babel/core@7.25.8)(eslint@8.57.1))(@types/eslint@8.56.10)(@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(typescript@5.6.3))(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.3))(eslint-plugin-ember@12.2.1(@babel/core@7.25.8)(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1))(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1))(eslint@8.57.1)(prettier@3.3.3)(typescript@5.6.3)
       '@gossi/config-prettier':
-        specifier: ^0.9.0
+        specifier: ^0.9.1
         version: 0.9.1(prettier@3.3.3)
       '@gossi/config-targets':
-        specifier: ^0.9.0
+        specifier: ^0.9.1
         version: 0.9.1
       '@release-it-plugins/lerna-changelog':
         specifier: ^7.0.0
@@ -72,10 +72,10 @@ importers:
         specifier: ^3.0.3
         version: 3.0.3
       '@typescript-eslint/eslint-plugin':
-        specifier: ^7.11.0
+        specifier: ^7.18.0
         version: 7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(typescript@5.6.3)
       '@typescript-eslint/parser':
-        specifier: ^7.11.0
+        specifier: ^7.18.0
         version: 7.18.0(eslint@8.57.1)(typescript@5.6.3)
       concurrently:
         specifier: ^9.0.1
@@ -87,13 +87,13 @@ importers:
         specifier: ~5.12.0
         version: 5.12.0(@glimmer/component@1.1.2(@babel/core@7.25.8))(@glint/template@1.5.0)(rsvp@4.8.5)(webpack@5.95.0)
       eslint:
-        specifier: ^8.56.0
+        specifier: ^8.57.1
         version: 8.57.1
       eslint-plugin-ember:
-        specifier: ^12.1.1
+        specifier: ^12.2.1
         version: 12.2.1(@babel/core@7.25.8)(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)
       prettier:
-        specifier: ^3.2.5
+        specifier: ^3.3.3
         version: 3.3.3
       release-it:
         specifier: ^17.0.0
@@ -154,13 +154,13 @@ importers:
         specifier: ^0.13.0
         version: 0.13.0(@babel/core@7.25.8)(@babel/eslint-parser@7.25.8(@babel/core@7.25.8)(eslint@8.57.1))(@types/eslint@8.56.10)(@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(typescript@5.6.3))(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.3))(eslint-plugin-ember@12.2.1(@babel/core@7.25.8)(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1))(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1))(eslint@8.57.1)(prettier@3.3.3)(typescript@5.6.3)
       '@gossi/config-prettier':
-        specifier: ^0.9.0
+        specifier: ^0.9.1
         version: 0.9.1(prettier@3.3.3)
       '@gossi/config-targets':
-        specifier: ^0.9.0
+        specifier: ^0.9.1
         version: 0.9.1
       '@gossi/config-template-lint':
-        specifier: ^0.8.0
+        specifier: ^0.8.1
         version: 0.8.1(ember-template-lint@6.0.0)(prettier@3.3.3)
       '@tsconfig/ember':
         specifier: ^3.0.0
@@ -172,10 +172,10 @@ importers:
         specifier: ^4.0.4
         version: 4.0.9
       '@typescript-eslint/eslint-plugin':
-        specifier: ^7.11.0
+        specifier: ^7.18.0
         version: 7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(typescript@5.6.3)
       '@typescript-eslint/parser':
-        specifier: ^7.11.0
+        specifier: ^7.18.0
         version: 7.18.0(eslint@8.57.1)(typescript@5.6.3)
       broccoli-asset-rev:
         specifier: ^3.0.0
@@ -229,16 +229,16 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0(encoding@0.1.13)
       eslint:
-        specifier: ^8.56.0
+        specifier: ^8.57.1
         version: 8.57.1
       eslint-plugin-ember:
-        specifier: ^12.1.1
+        specifier: ^12.2.1
         version: 12.2.1(@babel/core@7.25.8)(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)
       loader.js:
         specifier: ^4.7.0
         version: 4.7.0
       prettier:
-        specifier: ^3.2.5
+        specifier: ^3.3.3
         version: 3.3.3
       qunit:
         specifier: ^2.22.0
