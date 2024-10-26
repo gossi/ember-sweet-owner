@@ -250,7 +250,7 @@ importers:
         specifier: ^5.6.3
         version: 5.6.3
       webpack:
-        specifier: ^5.90.1
+        specifier: ^5.95.0
         version: 5.95.0
 
 packages:
