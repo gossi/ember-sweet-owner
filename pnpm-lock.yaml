@@ -184,7 +184,7 @@ importers:
         specifier: ^9.0.1
         version: 9.0.1
       ember-auto-import:
-        specifier: ^2.7.2
+        specifier: ^2.8.1
         version: 2.8.1(@glint/template@1.5.0)(webpack@5.95.0)
       ember-cli:
         specifier: ~5.12.0
