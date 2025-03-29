@@ -44,7 +44,7 @@
     "@gossi/config-prettier": "^0.9.1",
     "@gossi/config-targets": "^0.9.1",
     "@gossi/config-template-lint": "^0.8.1",
-    "@tsconfig/ember": "^3.0.8",
+    "@tsconfig/ember": "^3.0.10",
     "@types/qunit": "^2.19.12",
     "@types/rsvp": "^4.0.9",
     "@typescript-eslint/eslint-plugin": "^8.19.0",
