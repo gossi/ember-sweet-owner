@@ -81,7 +81,7 @@
     "prettier": "^3.4.2",
     "release-it": "^17.11.0",
     "rollup": "^4.38.0",
-    "typescript": "^5.7.2"
+    "typescript": "^5.8.2"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
