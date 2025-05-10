@@ -124,8 +124,8 @@ importers:
         specifier: ^4.0.1
         version: 4.0.1
       '@ember/test-helpers':
-        specifier: ^5.2.1
-        version: 5.2.1(@babel/core@7.27.1)(@glint/template@1.5.2)(ember-source@6.4.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
+        specifier: ^5.2.2
+        version: 5.2.2(@babel/core@7.27.1)(@glint/template@1.5.2)
       '@embroider/macros':
         specifier: ^1.17.2
         version: 1.17.2(@glint/template@1.5.2)
@@ -212,7 +212,7 @@ importers:
         version: 0.5.0
       ember-qunit:
         specifier: ^8.1.1
-        version: 8.1.1(@ember/test-helpers@5.2.1(@babel/core@7.27.1)(@glint/template@1.5.2)(ember-source@6.4.0(@glimmer/component@2.0.0)(rsvp@4.8.5)))(@glint/template@1.5.2)(ember-source@6.4.0(@glimmer/component@2.0.0)(rsvp@4.8.5))(qunit@2.24.1)
+        version: 8.1.1(@ember/test-helpers@5.2.2(@babel/core@7.27.1)(@glint/template@1.5.2))(@glint/template@1.5.2)(ember-source@6.4.0(@glimmer/component@2.0.0)(rsvp@4.8.5))(qunit@2.24.1)
       ember-resolver:
         specifier: ^13.1.0
         version: 13.1.0(ember-source@6.4.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
@@ -919,10 +919,8 @@ packages:
   '@ember/string@4.0.1':
     resolution: {integrity: sha512-VWeng8BSWrIsdPfffOQt/bKwNKJL7+37gPFh/6iZZ9bke+S83kKqkS30poo4bTGfRcMnvAE0ie7txom+iDu81Q==}
 
-  '@ember/test-helpers@5.2.1':
-    resolution: {integrity: sha512-hxY3379AvMolYnQsi9pqrR7tup/SmE/9zzkpiLnu2VTmrW8xsgV7MrXF1a3xw2twLWPSzVF8T3VDPyvuHbvqfw==}
-    peerDependencies:
-      ember-source: '>= 4.0.0'
+  '@ember/test-helpers@5.2.2':
+    resolution: {integrity: sha512-Cclqeh0j6RnYvoaElAVC3Nd1fsSUkc3oUTwTsLlNiC3riyPq8lNYxh96VM59/yji2ntrd/cJQ7qhhSZWd6hsEw==}
 
   '@ember/test-waiters@3.1.0':
     resolution: {integrity: sha512-bb9h95ktG2wKY9+ja1sdsFBdOms2lB19VWs8wmNpzgHv1NCetonBoV5jHBV4DHt0uS1tg9z66cZqhUVlYs96KQ==}
@@ -7988,7 +7986,7 @@ snapshots:
 
   '@ember/string@4.0.1': {}
 
-  '@ember/test-helpers@5.2.1(@babel/core@7.27.1)(@glint/template@1.5.2)(ember-source@6.4.0(@glimmer/component@2.0.0)(rsvp@4.8.5))':
+  '@ember/test-helpers@5.2.2(@babel/core@7.27.1)(@glint/template@1.5.2)':
     dependencies:
       '@ember/test-waiters': 3.1.0
       '@embroider/addon-shim': 1.9.0
@@ -7996,7 +7994,6 @@ snapshots:
       '@simple-dom/interface': 1.4.0
       decorator-transforms: 2.2.2(@babel/core@7.27.1)
       dom-element-descriptors: 0.5.1
-      ember-source: 6.4.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
     transitivePeerDependencies:
       - '@babel/core'
       - '@glint/template'
@@ -10991,9 +10988,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-qunit@8.1.1(@ember/test-helpers@5.2.1(@babel/core@7.27.1)(@glint/template@1.5.2)(ember-source@6.4.0(@glimmer/component@2.0.0)(rsvp@4.8.5)))(@glint/template@1.5.2)(ember-source@6.4.0(@glimmer/component@2.0.0)(rsvp@4.8.5))(qunit@2.24.1):
+  ember-qunit@8.1.1(@ember/test-helpers@5.2.2(@babel/core@7.27.1)(@glint/template@1.5.2))(@glint/template@1.5.2)(ember-source@6.4.0(@glimmer/component@2.0.0)(rsvp@4.8.5))(qunit@2.24.1):
     dependencies:
-      '@ember/test-helpers': 5.2.1(@babel/core@7.27.1)(@glint/template@1.5.2)(ember-source@6.4.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
+      '@ember/test-helpers': 5.2.2(@babel/core@7.27.1)(@glint/template@1.5.2)
       '@embroider/addon-shim': 1.9.0
       '@embroider/macros': 1.17.2(@glint/template@1.5.2)
       ember-cli-test-loader: 3.1.0
