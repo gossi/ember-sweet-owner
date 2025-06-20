@@ -9,14 +9,6 @@ on:
     # filtering branches here prevents duplicate builds from pull_request and push
     branches:
       - main
-      - "v*"
-    # always run CI for tags
-    tags:
-      - "*"
-
-  # early issue detection: run CI weekly on Sundays
-  schedule:
-    - cron: "0 6 * * 0"
 
 env:
   CI: true
@@ -26,81 +18,91 @@ jobs:
     name: lint:js
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Setup
-        uses: wyvox/action@v1
-      - name: Build
-        run: pnpm --filter ember-sweet-owner build
+        uses: ./.github/actions/setup
       - run: pnpm run -r --parallel --aggregate-output lint:js
 
   lint-hbs:
     name: lint:hbs
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Setup
-        uses: wyvox/action@v1
-      - name: Build
-        run: pnpm --filter ember-sweet-owner build
+        uses: ./.github/actions/setup
       - run: pnpm run -r --parallel --aggregate-output lint:hbs
 
   lint-types:
     name: lint:types
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Setup
-        uses: wyvox/action@v1
-      - name: Build
-        run: pnpm --filter ember-sweet-owner build
+        uses: ./.github/actions/setup
       - run: pnpm run -r --parallel --aggregate-output lint:types
 
-  test-locked-deps:
+  test:
     name: Locked Deps
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Setup
-        uses: wyvox/action@v1
-      - name: Build package
-        run: pnpm --filter ember-sweet-owner build
+        uses: ./.github/actions/setup
       - name: Tests
-        run: pnpm run -r --parallel --aggregate-output test
+        run: pnpm test
+      # For the Try Scenarios
+      - id: set-matrix
+        run: |
+          echo "matrix=$(pnpm -s dlx @embroider/try list)" >> $GITHUB_OUTPUT
 
-  test-floating-deps:
-    name: Floating Deps
-    runs-on: ubuntu-24.04
-    steps:
-      - name: Setup
-        uses: wyvox/action@v1
-        with:
-          pnpm-args: --no-frozen-lockfile
-      - name: Build package
-        run: pnpm --filter ember-sweet-owner build
-      - name: Tests
-        run: pnpm run -r --parallel --aggregate-output test
-
-  test-try:
-    name: Ember Try
-    runs-on: ubuntu-24.04
-    needs: [test-locked-deps]
-
+  try-scenarios:
+    name: ${{ matrix.name }}
+    runs-on: ubuntu-latest
+    needs: test
+    timeout-minutes: 10
     strategy:
       fail-fast: false
-      matrix:
-        try-scenario:
-          - ember-3.28
-          - ember-4.4
-          - ember-4.8
-          - ember-4.12
-          - ember-5.4
-          - without-polaris-service
-          - ember-release
-          - ember-beta
-          - ember-canary
-          - embroider-safe
-          - embroider-optimized
+      matrix: ${{fromJson(needs.test.outputs.matrix)}}
+
     steps:
+      - uses: actions/checkout@v4
       - name: Setup
-        uses: wyvox/action@v1
-      - name: Build package
-        run: pnpm --filter ember-sweet-owner build
-      - name: Try Scenario
-        run: pnpm exec ember try:one ${{ matrix.try-scenario }} --skip-cleanup
-        working-directory: test-app
+        uses: ./.github/actions/setup
+        with:
+          install: false
+      - name: Apply Scenario
+        run: pnpm dlx @embroider/try apply ${{ matrix.name }}
+      - name: Install Dependencies
+        run: pnpm install --no-lockfile
+      - name: Run Tests
+        run: pnpm test
+        env: ${{ matrix.env }}
+
+  # test-try:
+  #   name: Ember Try
+  #   runs-on: ubuntu-24.04
+  #   needs: [test-locked-deps]
+
+  #   strategy:
+  #     fail-fast: false
+  #     matrix:
+  #       try-scenario:
+  #         - ember-3.28
+  #         - ember-4.4
+  #         - ember-4.8
+  #         - ember-4.12
+  #         - ember-5.4
+  #         - without-polaris-service
+  #         - ember-release
+  #         - ember-beta
+  #         - ember-canary
+  #         - embroider-safe
+  #         - embroider-optimized
+  #   steps:
+  #     - name: Setup
+  #       uses: wyvox/action@v1
+  #     - name: Build package
+  #       run: pnpm --filter ember-sweet-owner build
+  #     - name: Try Scenario
+  #       run: pnpm exec ember try:one ${{ matrix.try-scenario }} --skip-cleanup
+  #       working-directory: test-app

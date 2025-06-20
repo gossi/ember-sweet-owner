@@ -1,7 +1,7 @@
 import { Addon } from '@embroider/addon-dev/rollup';
+import { resolve } from 'node:path';
 
 import { babel } from '@rollup/plugin-babel';
-import { nodeResolve } from '@rollup/plugin-node-resolve';
 import { defineConfig } from 'rollup';
 
 const addon = new Addon({
@@ -9,8 +9,10 @@ const addon = new Addon({
   destDir: 'dist'
 });
 
-// Add extensions here, such as ts, gjs, etc that you may import
-const extensions = ['.js', '.ts'];
+const configs = {
+  babel: resolve(import.meta.dirname, './babel.publish.config.mjs'),
+  ts: resolve(import.meta.dirname, './tsconfig.publish.json')
+};
 
 export default defineConfig({
   // input: ['src/**/*.ts'],
@@ -29,25 +31,28 @@ export default defineConfig({
     // not everything in publicEntrypoints necessarily needs to go here.
     // addon.appReexports(['components/**/*.js']),
 
-    // Allows rollup to resolve imports of files with the specified extensions
-    nodeResolve({ extensions }),
+    // Follow the V2 Addon rules about dependencies. Your code can import from
+    // `dependencies` and `peerDependencies` as well as standard Ember-provided
+    // package names.
+    addon.dependencies(),
 
     // This babel config should *not* apply presets or compile away ES modules.
     // It exists only to provide development niceties for you, like automatic
     // template colocation.
     // compile TypeScript to latest JavaScript, including Babel transpilation
     babel({
-      extensions,
+      extensions: ['.js', '.gjs', '.ts', '.gts'],
       babelHelpers: 'bundled'
     }),
 
-    // Follow the V2 Addon rules about dependencies. Your code can import from
-    // `dependencies` and `peerDependencies` as well as standard Ember-provided
-    // package names.
-    addon.dependencies(),
-
     // Ensure that standalone .hbs files are properly integrated as Javascript.
     // addon.hbs(),
+
+    // Ensure that .gjs files are properly integrated as Javascript
+    // addon.gjs(),
+
+    // Emit .d.ts declaration files
+    addon.declarations('declarations', `glint --declaration --project ${configs.ts}`),
 
     // addons are allowed to contain imports of .css files, which we want rollup
     // to leave alone and keep in the published output.

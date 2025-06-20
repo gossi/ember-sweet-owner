@@ -2,9 +2,9 @@ import Service from '@ember/service';
 import { module, test } from 'qunit';
 import { dependencySatisfies, importSync, macroCondition } from '@embroider/macros';
 
-import { sweetenOwner } from 'ember-sweet-owner';
+import { sweetenOwner } from '#src';
 
-import { setupTest } from '../helpers';
+import { setupTest } from 'ember-qunit';
 
 import type { TestContext } from '@ember/test-helpers';
 import type PolarisService from 'ember-polaris-service';
