@@ -42,7 +42,7 @@ jobs:
       - run: pnpm run -r --parallel --aggregate-output lint:types
 
   test:
-    name: Locked Deps
+    name: Test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

@@ -27,6 +27,7 @@
     },
     "./addon-main.js": "./addon-main.cjs"
   },
+  "packageManager": "pnpm@10.12.1",
   "scripts": {
     "build": "rollup --config",
     "dev": "vite dev",
