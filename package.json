@@ -5,17 +5,15 @@
   "keywords": [
     "ember-addon"
   ],
-  "repository": "https://github.com/gossi/ember-sweet-owner",
   "license": "MIT",
   "author": "Thomas Gossmann",
+  "repository": "https://github.com/gossi/ember-sweet-owner",
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
-  "files": [
-    "addon-main.cjs",
-    "dist",
-    "declarations"
-  ],
+  "imports": {
+    "#src": "./src/index.ts"
+  },
   "exports": {
     ".": {
       "types": "./declarations/index.d.ts",
@@ -27,7 +25,11 @@
     },
     "./addon-main.js": "./addon-main.cjs"
   },
-  "packageManager": "pnpm@10.12.1",
+  "files": [
+    "addon-main.cjs",
+    "dist",
+    "declarations"
+  ],
   "scripts": {
     "build": "rollup --config",
     "dev": "vite dev",
@@ -64,8 +66,8 @@
     "@ember/library-tsconfig": "^1.0.0",
     "@ember/test-helpers": "^5.2.1",
     "@embroider/addon-dev": "^8.1.0",
-    "@embroider/core": "^4.1.0",
     "@embroider/compat": "^4.1.0",
+    "@embroider/core": "^4.1.0",
     "@embroider/vite": "^1.1.5",
     "@glint/core": "^2.0.0-alpha.2",
     "@glint/environment-ember-loose": "^2.0.0-alpha.2",
@@ -85,11 +87,13 @@
     "eslint-plugin-qunit": "^8.1.2",
     "prettier": "^3.5.3",
     "qunit": "^2.24.1",
+    "release-plan": "^0.17.0",
     "rollup": "^4.44.0",
     "testem": "^3.15.1",
     "typescript": "^5.8.3",
     "vite": "^6.3.5"
   },
+  "packageManager": "pnpm@10.12.1",
   "engines": {
     "node": "^20.11.0 || >=22"
   },
@@ -100,8 +104,5 @@
     "version": 2,
     "type": "addon",
     "main": "addon-main.cjs"
-  },
-  "imports": {
-    "#src": "./src/index.ts"
   }
 }
