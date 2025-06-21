@@ -83,7 +83,7 @@ declare module '@ember/service' {
 
 Accessing the service from with in a single file component:
 
-```gts
+```glimmer-ts
 // app/components/counter.gts
 import { action } from 'ember-command';
 import { ability } from 'ember-ability';

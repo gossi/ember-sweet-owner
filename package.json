@@ -16,7 +16,6 @@
     "dist",
     "declarations"
   ],
-  "type": "module",
   "exports": {
     ".": {
       "types": "./declarations/index.d.ts",

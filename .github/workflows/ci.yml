@@ -1,12 +1,8 @@
-# This workflow is largely based on
-# https://github.com/salsify/ember-css-modules/blob/master/.github/workflows/ci.yml
-
 name: CI
 
 on:
   pull_request:
   push:
-    # filtering branches here prevents duplicate builds from pull_request and push
     branches:
       - main
 
@@ -68,32 +64,3 @@ jobs:
       - name: Run Tests
         run: pnpm test
         env: ${{ matrix.env }}
-
-  # test-try:
-  #   name: Ember Try
-  #   runs-on: ubuntu-24.04
-  #   needs: [test-locked-deps]
-
-  #   strategy:
-  #     fail-fast: false
-  #     matrix:
-  #       try-scenario:
-  #         - ember-3.28
-  #         - ember-4.4
-  #         - ember-4.8
-  #         - ember-4.12
-  #         - ember-5.4
-  #         - without-polaris-service
-  #         - ember-release
-  #         - ember-beta
-  #         - ember-canary
-  #         - embroider-safe
-  #         - embroider-optimized
-  #   steps:
-  #     - name: Setup
-  #       uses: wyvox/action@v1
-  #     - name: Build package
-  #       run: pnpm --filter ember-sweet-owner build
-  #     - name: Try Scenario
-  #       run: pnpm exec ember try:one ${{ matrix.try-scenario }} --skip-cleanup
-  #       working-directory: test-app

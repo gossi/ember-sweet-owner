@@ -22,14 +22,6 @@ export default {
         transforms: [...(isCompat ? templateCompatSupport() : macros.templateMacros)]
       }
     ],
-    // [
-    //   'module:decorator-transforms',
-    //   {
-    //     runtime: {
-    //       import: import.meta.resolve('decorator-transforms/runtime-esm')
-    //     }
-    //   }
-    // ],
     ...(isCompat ? babelCompatSupport() : macros.babelMacros)
   ],
 
