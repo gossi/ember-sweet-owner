@@ -85,7 +85,7 @@ function compatEmberScenario(name, emberVersion) {
       ENABLE_COMPAT_BUILD: true
     },
     files: {
-      'ember-cli-build.js': emberCliBuildJS(),
+      'ember-cli-build.cjs': emberCliBuildJS(),
       'babel.config.cjs': compatBabel(),
       'config/optional-features.json': JSON.stringify({
         'application-template-wrapper': false,
