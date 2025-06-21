@@ -67,7 +67,7 @@
     "@gossi/config-eslint": "^0.14.0",
     "@gossi/config-prettier": "^0.10.0",
     "@gossi/config-targets": "^0.10.0",
-    "@release-it-plugins/lerna-changelog": "^7.0.0",
+    "@release-it-plugins/lerna-changelog": "^8.0.1",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@tsconfig/ember": "^3.0.10",
