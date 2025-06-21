@@ -1,4 +1,4 @@
-import { babelCompatSupport } from '@embroider/compat/babel';
+import { babelCompatSupport, templateCompatSupport } from '@embroider/compat/babel';
 import { buildMacros } from '@embroider/macros/babel';
 
 const macros = buildMacros();

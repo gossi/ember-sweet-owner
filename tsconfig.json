@@ -3,7 +3,7 @@
   "glint": {
     "environment": ["ember-loose"]
   },
-  "include": ["src/**/*", "tests/**/*", "types/**/*"],
+  "include": ["src", "tests", "types"],
   "compilerOptions": {
     "rootDir": ".",
     "types": ["ember-source/types", "vite/client", "@embroider/core/virtual"]

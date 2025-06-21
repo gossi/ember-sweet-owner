@@ -14,7 +14,7 @@ export default {
         targetFormat: 'hbs',
         transforms: []
       }
-    ],
+    ]
     // [
     //   'module:decorator-transforms',
     //   {

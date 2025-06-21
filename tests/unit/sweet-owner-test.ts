@@ -1,10 +1,9 @@
 import Service from '@ember/service';
 import { module, test } from 'qunit';
+import { setupTest } from 'ember-qunit';
 import { dependencySatisfies, importSync, macroCondition } from '@embroider/macros';
 
-import { sweetenOwner } from '#src';
-
-import { setupTest } from 'ember-qunit';
+import { sweetenOwner } from 'ember-sweet-owner';
 
 import type { TestContext } from '@ember/test-helpers';
 import type PolarisService from 'ember-polaris-service';
@@ -43,7 +42,6 @@ module('Unit | Sweet Owner', function (hooks) {
 
   if (macroCondition(dependencySatisfies('ember-polaris-service', '*'))) {
     test('polaris-service', function (this: TestContext, assert) {
-      // eslint-disable-next-line @typescript-eslint/naming-convention
       const { default: PService } = importSync('ember-polaris-service') as {
         default: typeof PolarisService;
       };
@@ -55,7 +53,7 @@ module('Unit | Sweet Owner', function (hooks) {
       const container = sweetenOwner(this.owner);
       const testService = container.service(TestService);
 
-      assert.equal(testService.hi, 42);
+      assert.strictEqual(testService.hi, 42);
     });
   }
 });

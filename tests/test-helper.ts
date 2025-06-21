@@ -20,7 +20,7 @@ class TestApp extends EmberApp {
 Router.map(function () {});
 
 import { setApplication } from '@ember/test-helpers';
-import * as QUnit from 'qunit';
+// import * as QUnit from 'qunit';
 // import { setup } from 'qunit-dom';
 import { setupEmberOnerrorValidation, start as qunitStart } from 'ember-qunit';
 
@@ -31,7 +31,7 @@ export function start() {
       rootElement: '#ember-testing'
     })
   );
-  // eslint-disable-next-line import-x/namespace
+
   // setup(QUnit.assert);
   setupEmberOnerrorValidation();
   qunitStart();

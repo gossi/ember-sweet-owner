@@ -10,9 +10,7 @@ import type { service as polarisService } from 'ember-polaris-service';
 // Related RFC/Types:
 // https://rfcs.emberjs.com/id/0585-improved-ember-registry-apis/#appendix-typescript
 
-interface UnknownSweetOwner {
-  readonly [container: string]: Record<string, unknown>;
-}
+type UnknownSweetOwner = Readonly<Record<string, Record<string, unknown>>>;
 
 interface NamedSweetOwner {
   readonly services: Services;
@@ -50,6 +48,7 @@ function sweetenOwner(owner: Owner): SweetOwner {
   return new Proxy(owner, {
     get(_target: Owner, container: string) {
       if (macroCondition(dependencySatisfies('ember-polaris-service', '*'))) {
+        // eslint-disable-next-line unicorn/no-lonely-if
         if (container === 'service') {
           const { service, setScope } = importSync('ember-polaris-service') as {
             service: typeof polarisService;
