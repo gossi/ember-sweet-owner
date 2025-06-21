@@ -77,7 +77,7 @@
     "@gossi/config-targets": "^1.0.0",
     "@rollup/plugin-babel": "^6.0.4",
     "@types/qunit": "^2.19.12",
-    "babel-plugin-ember-template-compilation": "^2.2.5",
+    "babel-plugin-ember-template-compilation": "^2.4.1",
     "ember-polaris-service": "^0.5.0",
     "ember-qunit": "^9.0.3",
     "ember-resolver": "^13.1.1",
