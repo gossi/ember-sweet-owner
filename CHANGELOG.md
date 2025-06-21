@@ -1,5 +1,10 @@
 # Changelog
 
+
+
+
+
+
 ## Release (2025-06-21)
 
 * ember-sweet-owner 1.0.0 (major)
