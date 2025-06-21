@@ -1,5 +1,24 @@
 # Changelog
 
+## Release (2025-06-21)
+
+* ember-sweet-owner 1.0.0 (major)
+
+#### :boom: Breaking Change
+* `ember-sweet-owner`
+  * [#452](https://github.com/gossi/ember-sweet-owner/pull/452) Drop support for node 18 ([@gossi](https://github.com/gossi))
+
+#### :house: Internal
+* `ember-sweet-owner`
+  * [#455](https://github.com/gossi/ember-sweet-owner/pull/455) Switch from `release-it` to `release-plan` ([@gossi](https://github.com/gossi))
+  * [#448](https://github.com/gossi/ember-sweet-owner/pull/448) Switch to vite ([@gossi](https://github.com/gossi))
+  * [#293](https://github.com/gossi/ember-sweet-owner/pull/293) Use shared renovate config ([@gossi](https://github.com/gossi))
+  * [#165](https://github.com/gossi/ember-sweet-owner/pull/165) Hoist lint jobs for CI (for direct feedback) ([@gossi](https://github.com/gossi))
+  * [#162](https://github.com/gossi/ember-sweet-owner/pull/162) Internal Updates ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 
 
 ## v0.2.0 (2024-02-12)
