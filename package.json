@@ -1,6 +1,6 @@
 {
   "name": "ember-sweet-owner",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "Read API for Ember's owner",
   "keywords": [
     "ember-addon"
