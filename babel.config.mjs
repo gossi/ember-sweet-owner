@@ -22,7 +22,7 @@ export default {
         transforms: [...(isCompat ? templateCompatSupport() : macros.templateMacros)]
       }
     ],
-    ...(isCompat ? babelCompatSupport() : macros.babelMacros)
+    ...(isCompat ? babelCompatSupport() : [])
   ],
 
   generatorOpts: {
