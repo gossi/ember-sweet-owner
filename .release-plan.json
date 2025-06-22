@@ -1,22 +1,18 @@
 {
   "solution": {
     "ember-sweet-owner": {
-      "impact": "major",
-      "oldVersion": "0.2.0",
-      "newVersion": "1.0.0",
+      "impact": "patch",
+      "oldVersion": "1.0.0",
+      "newVersion": "1.0.1",
       "tagName": "latest",
       "constraints": [
         {
-          "impact": "major",
-          "reason": "Appears in changelog section :boom: Breaking Change"
-        },
-        {
           "impact": "patch",
-          "reason": "Appears in changelog section :house: Internal"
+          "reason": "Appears in changelog section :bug: Bug Fix"
         }
       ],
       "pkgJSONPath": "./package.json"
     }
   },
-  "description": "## Release (2025-06-21)\n\n* ember-sweet-owner 1.0.0 (major)\n\n#### :boom: Breaking Change\n* `ember-sweet-owner`\n  * [#452](https://github.com/gossi/ember-sweet-owner/pull/452) Drop support for node 18 ([@gossi](https://github.com/gossi))\n\n#### :house: Internal\n* `ember-sweet-owner`\n  * [#459](https://github.com/gossi/ember-sweet-owner/pull/459) Fix relase-plan setup ([@gossi](https://github.com/gossi))\n  * [#456](https://github.com/gossi/ember-sweet-owner/pull/456) Prepare Release v1.0.0 ([@github-actions[bot]](https://github.com/apps/github-actions))\n  * [#455](https://github.com/gossi/ember-sweet-owner/pull/455) Switch from `release-it` to `release-plan` ([@gossi](https://github.com/gossi))\n  * [#448](https://github.com/gossi/ember-sweet-owner/pull/448) Switch to vite ([@gossi](https://github.com/gossi))\n  * [#293](https://github.com/gossi/ember-sweet-owner/pull/293) Use shared renovate config ([@gossi](https://github.com/gossi))\n  * [#165](https://github.com/gossi/ember-sweet-owner/pull/165) Hoist lint jobs for CI (for direct feedback) ([@gossi](https://github.com/gossi))\n  * [#162](https://github.com/gossi/ember-sweet-owner/pull/162) Internal Updates ([@gossi](https://github.com/gossi))\n\n#### Committers: 2\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n- [@github-actions[bot]](https://github.com/apps/github-actions)\n"
+  "description": "## Release (2025-06-22)\n\n* ember-sweet-owner 1.0.1 (patch)\n\n#### :bug: Bug Fix\n* `ember-sweet-owner`\n  * [#464](https://github.com/gossi/ember-sweet-owner/pull/464) Fix macros in build ([@gossi](https://github.com/gossi))\n\n#### Committers: 1\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n"
 }

@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2025-06-22)
+
+* ember-sweet-owner 1.0.1 (patch)
+
+#### :bug: Bug Fix
+* `ember-sweet-owner`
+  * [#464](https://github.com/gossi/ember-sweet-owner/pull/464) Fix macros in build ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## Release (2025-06-21)
 
 * ember-sweet-owner 1.0.0 (major)
