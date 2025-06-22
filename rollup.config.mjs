@@ -42,7 +42,8 @@ export default defineConfig({
     // compile TypeScript to latest JavaScript, including Babel transpilation
     babel({
       extensions: ['.js', '.gjs', '.ts', '.gts'],
-      babelHelpers: 'bundled'
+      babelHelpers: 'bundled',
+      configFile: configs.babel
     }),
 
     // Ensure that standalone .hbs files are properly integrated as Javascript.
