@@ -88,7 +88,7 @@
     "prettier": "^3.6.2",
     "qunit": "^2.24.1",
     "release-plan": "^0.17.0",
-    "rollup": "^4.44.1",
+    "rollup": "^4.44.2",
     "testem": "^3.16.0",
     "typescript": "^5.8.3",
     "vite": "^7.0.3"
