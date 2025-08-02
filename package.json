@@ -90,7 +90,7 @@
     "release-plan": "^0.17.2",
     "rollup": "^4.46.2",
     "testem": "^3.16.0",
-    "typescript": "^5.8.3",
+    "typescript": "^5.9.2",
     "vite": "^7.0.6"
   },
   "packageManager": "pnpm@10.13.1",
