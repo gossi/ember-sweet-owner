@@ -1,18 +1,8 @@
 {
   "solution": {
     "ember-sweet-owner": {
-      "impact": "patch",
-      "oldVersion": "1.0.0",
-      "newVersion": "1.0.1",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :bug: Bug Fix"
-        }
-      ],
-      "pkgJSONPath": "./package.json"
+      "oldVersion": "1.0.1"
     }
   },
-  "description": "## Release (2025-06-22)\n\n* ember-sweet-owner 1.0.1 (patch)\n\n#### :bug: Bug Fix\n* `ember-sweet-owner`\n  * [#464](https://github.com/gossi/ember-sweet-owner/pull/464) Fix macros in build ([@gossi](https://github.com/gossi))\n\n#### Committers: 1\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n"
+  "description": "\n\n\n\n"
 }
