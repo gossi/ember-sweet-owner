@@ -91,7 +91,7 @@
     "rollup": "^4.50.1",
     "testem": "^3.16.0",
     "typescript": "^5.9.2",
-    "vite": "^7.1.5"
+    "vite": "^7.1.7"
   },
   "packageManager": "pnpm@10.16.1",
   "engines": {
