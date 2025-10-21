@@ -85,8 +85,8 @@ importers:
         specifier: ^0.5.0
         version: 0.5.0
       ember-qunit:
-        specifier: ^9.0.3
-        version: 9.0.3(@ember/test-helpers@5.3.0(@babel/core@7.28.4)(@glint/template@1.6.2))(@glint/template@1.6.2)(qunit@2.24.1)
+        specifier: ^9.0.4
+        version: 9.0.4(@ember/test-helpers@5.3.0(@babel/core@7.28.4)(@glint/template@1.6.2))(@glint/template@1.6.2)(qunit@2.24.2)
       ember-resolver:
         specifier: ^13.1.1
         version: 13.1.1
@@ -106,8 +106,8 @@ importers:
         specifier: ^3.6.2
         version: 3.6.2
       qunit:
-        specifier: ^2.24.1
-        version: 2.24.1
+        specifier: ^2.24.2
+        version: 2.24.2
       release-plan:
         specifier: ^0.17.2
         version: 0.17.2
@@ -2713,8 +2713,8 @@ packages:
   ember-polaris-service@0.5.0:
     resolution: {integrity: sha512-dugyu/H+h1dBjKpPQvQ/Mtml32lWnP7sDvMLKbqNnS2M8NGVQ/j7dov8FR0gAKwjWhCn+osUekGiG4PhEZ3wqg==}
 
-  ember-qunit@9.0.3:
-    resolution: {integrity: sha512-t+FD5/EWAR3WvGVj1etblFJJ6CaJqddDxusNcYYFZmW7zrQpCnQ9ziwpXM5/sw1sWabkhJZgYPXCn8bDRRhOfg==}
+  ember-qunit@9.0.4:
+    resolution: {integrity: sha512-rv6gKvrdXdPBTdSZC5co82eIcDWWVR7RjafU/c+5TTz290oXhIHPoVuZbcO2F5RiAqkTW0jKzwkCP8y+2tCjFw==}
     peerDependencies:
       '@ember/test-helpers': '>=3.0.3'
       qunit: ^2.13.0
@@ -4540,8 +4540,8 @@ packages:
   qunit-theme-ember@1.0.0:
     resolution: {integrity: sha512-vdMVVo6ecdCkWttMTKeyq1ZTLGHcA6zdze2zhguNuc3ritlJMhOXY5RDseqazOwqZVfCg3rtlmL3fMUyIzUyFQ==}
 
-  qunit@2.24.1:
-    resolution: {integrity: sha512-Eu0k/5JDjx0QnqxsE1WavnDNDgL1zgMZKsMw/AoAxnsl9p4RgyLODyo2N7abZY7CEAnvl5YUqFZdkImzbgXzSg==}
+  qunit@2.24.2:
+    resolution: {integrity: sha512-dWlYs+Q9AIDT3eHKgkpEpWrSjHjqTJNCAJr1tUo5bQuDMzlZvaqCz1bNZhqzNu41ibkIQ7b50S9y6IMlrrUfNQ==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -5377,16 +5377,16 @@ packages:
       yaml:
         optional: true
 
-  volar-service-html@0.0.64:
-    resolution: {integrity: sha512-5xknMYKmZBFzp2399RlsnGce25PfNu9ViXa1s63Q8NP6xeXcF3lInFsV+1o2DWBoXZdnXcuRvWOA+K+JIZLEcA==}
+  volar-service-html@0.0.66:
+    resolution: {integrity: sha512-MKKD2qM8qVZvBKBIugt00+Bm8j1ehgeX7Cm5XwgeEgdW/3PhUEEe/aeTxQGon1WJIGf2MM/cHPjZxPJOQN4WfQ==}
     peerDependencies:
       '@volar/language-service': ~2.4.0
     peerDependenciesMeta:
       '@volar/language-service':
         optional: true
 
-  volar-service-typescript@0.0.65:
-    resolution: {integrity: sha512-zPJuLIMs7lkQCvL+Rza8+3/EIoXEIkX8+DL7bNNfPgnbalbvRDhqWLVMJ6Zk3pINjLJafDqyhSbw8srfkUv97w==}
+  volar-service-typescript@0.0.66:
+    resolution: {integrity: sha512-8irsfCEf86R1RqPijrU6p5NCqKDNzyJNWKM6ZXmCcJqhebtl7Hr/a0bnlr59AzqkS3Ym4PbbJZs1K/92CXTDsw==}
     peerDependencies:
       '@volar/language-service': ~2.4.0
     peerDependenciesMeta:
@@ -6873,8 +6873,8 @@ snapshots:
       silent-error: 1.1.1
       typescript: 5.9.3
       uuid: 8.3.2
-      volar-service-html: 0.0.64(@volar/language-service@2.4.23)
-      volar-service-typescript: 0.0.65(@volar/language-service@2.4.23)
+      volar-service-html: 0.0.66(@volar/language-service@2.4.23)
+      volar-service-typescript: 0.0.66(@volar/language-service@2.4.23)
       vscode-languageserver-protocol: 3.17.5
       vscode-languageserver-textdocument: 1.0.12
       vscode-uri: 3.1.0
@@ -8596,12 +8596,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-qunit@9.0.3(@ember/test-helpers@5.3.0(@babel/core@7.28.4)(@glint/template@1.6.2))(@glint/template@1.6.2)(qunit@2.24.1):
+  ember-qunit@9.0.4(@ember/test-helpers@5.3.0(@babel/core@7.28.4)(@glint/template@1.6.2))(@glint/template@1.6.2)(qunit@2.24.2):
     dependencies:
       '@ember/test-helpers': 5.3.0(@babel/core@7.28.4)(@glint/template@1.6.2)
       '@embroider/addon-shim': 1.10.0
       '@embroider/macros': 1.19.2(@glint/template@1.6.2)
-      qunit: 2.24.1
+      qunit: 2.24.2
       qunit-theme-ember: 1.0.0
     transitivePeerDependencies:
       - '@glint/template'
@@ -10683,7 +10683,7 @@ snapshots:
 
   qunit-theme-ember@1.0.0: {}
 
-  qunit@2.24.1:
+  qunit@2.24.2:
     dependencies:
       commander: 7.2.0
       node-watch: 0.7.3
@@ -11691,7 +11691,7 @@ snapshots:
       fsevents: 2.3.3
       terser: 5.43.1
 
-  volar-service-html@0.0.64(@volar/language-service@2.4.23):
+  volar-service-html@0.0.66(@volar/language-service@2.4.23):
     dependencies:
       vscode-html-languageservice: 5.5.1
       vscode-languageserver-textdocument: 1.0.12
@@ -11699,7 +11699,7 @@ snapshots:
     optionalDependencies:
       '@volar/language-service': 2.4.23
 
-  volar-service-typescript@0.0.65(@volar/language-service@2.4.23):
+  volar-service-typescript@0.0.66(@volar/language-service@2.4.23):
     dependencies:
       path-browserify: 1.0.1
       semver: 7.7.2
