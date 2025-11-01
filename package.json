@@ -81,7 +81,7 @@
     "ember-polaris-service": "^0.5.0",
     "ember-qunit": "^9.0.4",
     "ember-resolver": "^13.1.1",
-    "ember-source": "~6.8.0",
+    "ember-source": "~6.8.1",
     "eslint": "^9.38.0",
     "eslint-plugin-ember": "^12.7.4",
     "eslint-plugin-qunit": "^8.2.5",
