@@ -88,7 +88,7 @@
     "qunit": "^2.24.3",
     "release-plan": "^0.17.2",
     "rollup": "^4.53.3",
-    "testem": "^3.16.0",
+    "testem": "^3.17.0",
     "typescript": "^5.9.3",
     "vite": "^7.2.7"
   },
