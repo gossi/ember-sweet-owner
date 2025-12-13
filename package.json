@@ -67,7 +67,7 @@
     "@ember/test-helpers": "^5.4.1",
     "@embroider/addon-dev": "^8.1.2",
     "@embroider/compat": "^4.1.11",
-    "@embroider/core": "^4.4.0",
+    "@embroider/core": "^4.4.1",
     "@embroider/vite": "^1.4.4",
     "@glint/ember-tsc": "^1.0.8",
     "@glint/template": "^1.7.3",
