@@ -86,7 +86,7 @@
     "eslint-plugin-qunit": "^8.2.5",
     "prettier": "^3.7.4",
     "qunit": "^2.25.0",
-    "release-plan": "^0.17.2",
+    "release-plan": "^0.17.4",
     "rollup": "^4.55.2",
     "testem": "^3.17.0",
     "typescript": "^5.9.3",
