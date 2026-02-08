@@ -2,17 +2,17 @@
   "solution": {
     "ember-sweet-owner": {
       "impact": "patch",
-      "oldVersion": "1.0.0",
-      "newVersion": "1.0.1",
+      "oldVersion": "1.0.1",
+      "newVersion": "1.0.2",
       "tagName": "latest",
       "constraints": [
         {
           "impact": "patch",
-          "reason": "Appears in changelog section :bug: Bug Fix"
+          "reason": "Appears in changelog section :house: Internal"
         }
       ],
       "pkgJSONPath": "./package.json"
     }
   },
-  "description": "## Release (2025-06-22)\n\n* ember-sweet-owner 1.0.1 (patch)\n\n#### :bug: Bug Fix\n* `ember-sweet-owner`\n  * [#464](https://github.com/gossi/ember-sweet-owner/pull/464) Fix macros in build ([@gossi](https://github.com/gossi))\n\n#### Committers: 1\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n"
+  "description": "## Release (2026-02-08)\n\n* ember-sweet-owner 1.0.2 (patch)\n\n#### :house: Internal\n* `ember-sweet-owner`\n  * [#595](https://github.com/gossi/ember-sweet-owner/pull/595) Use Trusted Publishing ([@gossi](https://github.com/gossi))\n  * [#594](https://github.com/gossi/ember-sweet-owner/pull/594) Update to glint v2 ([@gossi](https://github.com/gossi))\n\n#### Committers: 1\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n"
 }

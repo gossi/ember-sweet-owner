@@ -1,5 +1,17 @@
 # Changelog
 
+## Release (2026-02-08)
+
+* ember-sweet-owner 1.0.2 (patch)
+
+#### :house: Internal
+* `ember-sweet-owner`
+  * [#595](https://github.com/gossi/ember-sweet-owner/pull/595) Use Trusted Publishing ([@gossi](https://github.com/gossi))
+  * [#594](https://github.com/gossi/ember-sweet-owner/pull/594) Update to glint v2 ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## Release (2025-06-22)
 
 * ember-sweet-owner 1.0.1 (patch)
