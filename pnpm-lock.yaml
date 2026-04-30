@@ -62,7 +62,7 @@ importers:
         version: 1.7.7
       '@gossi/config-eslint':
         specifier: ^1.3.2
-        version: 1.3.2(@babel/eslint-parser@7.28.6(@babel/core@7.29.0)(eslint@9.39.4))(@babel/plugin-proposal-decorators@7.28.0(@babel/core@7.29.0))(@types/eslint@9.6.1)(@typescript-eslint/utils@8.38.0(eslint@9.39.4)(typescript@6.0.3))(eslint-plugin-ember@12.7.5(@babel/core@7.29.0)(@typescript-eslint/parser@8.38.0(eslint@9.39.4)(typescript@6.0.3))(eslint@9.39.4))(eslint-plugin-qunit@8.2.6(eslint@9.39.4))(eslint@9.39.4)(prettier@3.8.1)(typescript@6.0.3)
+        version: 1.3.2(@babel/eslint-parser@7.28.6(@babel/core@7.29.0)(eslint@9.39.4))(@babel/plugin-proposal-decorators@7.28.0(@babel/core@7.29.0))(@types/eslint@9.6.1)(@typescript-eslint/utils@8.38.0(eslint@9.39.4)(typescript@6.0.3))(eslint-plugin-ember@12.7.5(@babel/core@7.29.0)(@typescript-eslint/parser@8.38.0(eslint@9.39.4)(typescript@6.0.3))(eslint@9.39.4)(typescript@6.0.3))(eslint-plugin-qunit@8.2.6(eslint@9.39.4))(eslint@9.39.4)(prettier@3.8.1)(typescript@6.0.3)
       '@gossi/config-prettier':
         specifier: ^1.2.0
         version: 1.2.0(prettier@3.8.1)
@@ -95,7 +95,7 @@ importers:
         version: 9.39.4
       eslint-plugin-ember:
         specifier: ^12.7.5
-        version: 12.7.5(@babel/core@7.29.0)(@typescript-eslint/parser@8.38.0(eslint@9.39.4)(typescript@6.0.3))(eslint@9.39.4)
+        version: 12.7.5(@babel/core@7.29.0)(@typescript-eslint/parser@8.38.0(eslint@9.39.4)(typescript@6.0.3))(eslint@9.39.4)(typescript@6.0.3)
       eslint-plugin-qunit:
         specifier: ^8.2.6
         version: 8.2.6(eslint@9.39.4)
@@ -1606,6 +1606,12 @@ packages:
     peerDependencies:
       typescript: '>=4.8.4 <5.9.0'
 
+  '@typescript-eslint/tsconfig-utils@8.59.1':
+    resolution: {integrity: sha512-/0nEyPbX7gRsk0Uwfe4ALwwgxuA66d/l2mhRDNlAvaj4U3juhUtJNq0DsY8M2AYwwb9rEq2hrC3IcIcEt++iJA==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      typescript: '>=4.8.4 <6.1.0'
+
   '@typescript-eslint/type-utils@8.38.0':
     resolution: {integrity: sha512-c7jAvGEZVf0ao2z+nnz8BUaHZD09Agbh+DY7qvBQqLiz8uJzRgVPj5YvOh8I8uEiH8oIUGIfHzMwUcGVco/SJg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -2632,8 +2638,8 @@ packages:
     resolution: {integrity: sha512-rk7GY+FmLn/2e22HsZs0Ycrz8HQ1W3Fv+2TFOuEFW9optnDXDgkntPBIl6gact/LHsfBM5RKbM3dHsIIeLgl0Q==}
     engines: {node: 10.* || >= 12.*}
 
-  ember-eslint-parser@0.5.10:
-    resolution: {integrity: sha512-QOmqeY53LIMc3/FgMnvt/KY/JhtyOZchda+VLJe994muhsS76EQ1lJaqv6lntq9Pc2R8coqiBKVfqlD0DeqnGg==}
+  ember-eslint-parser@0.5.13:
+    resolution: {integrity: sha512-b6ALDaxs9Bb4v0uagWud/5lECb78qpXHFv7M340dUHFW4Y0RuhlsfA4Rb+765X1+6KHp8G7TaAs0UgggWUqD3g==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       '@babel/core': ^7.23.6
@@ -4605,8 +4611,8 @@ packages:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
     hasBin: true
 
-  semver@7.7.3:
-    resolution: {integrity: sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q==}
+  semver@7.7.4:
+    resolution: {integrity: sha512-vFKC2IEtQnVhpT78h1Yp8wzwrf8CM+MzKMHGJZfBtzhZNycRFnXsHk6E5TxIkkMsgNS7mdX3AGB7x2QM2di4lA==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -6177,7 +6183,7 @@ snapshots:
       '@embroider/shared-internals': 3.0.2
       broccoli-funnel: 3.0.8
       common-ancestor-path: 1.0.1
-      semver: 7.7.3
+      semver: 7.7.4
     transitivePeerDependencies:
       - supports-color
 
@@ -6222,7 +6228,7 @@ snapshots:
       resolve: 1.22.10
       resolve-package-path: 4.0.3
       resolve.exports: 2.0.3
-      semver: 7.7.3
+      semver: 7.7.4
       symlink-or-copy: 1.3.1
       tree-sync: 2.1.0
       typescript-memoize: 1.1.1
@@ -6260,7 +6266,7 @@ snapshots:
       resolve: 1.22.10
       resolve-package-path: 4.0.3
       resolve.exports: 2.0.3
-      semver: 7.7.3
+      semver: 7.7.4
       typescript-memoize: 1.1.1
       walk-sync: 3.0.0
     transitivePeerDependencies:
@@ -6279,7 +6285,7 @@ snapshots:
       find-up: 5.0.0
       lodash: 4.17.21
       resolve: 1.22.10
-      semver: 7.7.3
+      semver: 7.7.4
     optionalDependencies:
       '@glint/template': 1.7.7
     transitivePeerDependencies:
@@ -6303,7 +6309,7 @@ snapshots:
       pkg-entry-points: 1.1.1
       resolve-package-path: 4.0.3
       resolve.exports: 2.0.3
-      semver: 7.7.3
+      semver: 7.7.4
       typescript-memoize: 1.1.1
     transitivePeerDependencies:
       - supports-color
@@ -6530,7 +6536,7 @@ snapshots:
 
   '@glint/template@1.7.7': {}
 
-  '@gossi/config-eslint@1.3.2(@babel/eslint-parser@7.28.6(@babel/core@7.29.0)(eslint@9.39.4))(@babel/plugin-proposal-decorators@7.28.0(@babel/core@7.29.0))(@types/eslint@9.6.1)(@typescript-eslint/utils@8.38.0(eslint@9.39.4)(typescript@6.0.3))(eslint-plugin-ember@12.7.5(@babel/core@7.29.0)(@typescript-eslint/parser@8.38.0(eslint@9.39.4)(typescript@6.0.3))(eslint@9.39.4))(eslint-plugin-qunit@8.2.6(eslint@9.39.4))(eslint@9.39.4)(prettier@3.8.1)(typescript@6.0.3)':
+  '@gossi/config-eslint@1.3.2(@babel/eslint-parser@7.28.6(@babel/core@7.29.0)(eslint@9.39.4))(@babel/plugin-proposal-decorators@7.28.0(@babel/core@7.29.0))(@types/eslint@9.6.1)(@typescript-eslint/utils@8.38.0(eslint@9.39.4)(typescript@6.0.3))(eslint-plugin-ember@12.7.5(@babel/core@7.29.0)(@typescript-eslint/parser@8.38.0(eslint@9.39.4)(typescript@6.0.3))(eslint@9.39.4)(typescript@6.0.3))(eslint-plugin-qunit@8.2.6(eslint@9.39.4))(eslint@9.39.4)(prettier@3.8.1)(typescript@6.0.3)':
     dependencies:
       '@eslint/js': 9.39.4
       '@stylistic/eslint-plugin': 5.2.2(eslint@9.39.4)
@@ -6549,7 +6555,7 @@ snapshots:
     optionalDependencies:
       '@babel/eslint-parser': 7.28.6(@babel/core@7.29.0)(eslint@9.39.4)
       '@babel/plugin-proposal-decorators': 7.28.0(@babel/core@7.29.0)
-      eslint-plugin-ember: 12.7.5(@babel/core@7.29.0)(@typescript-eslint/parser@8.38.0(eslint@9.39.4)(typescript@6.0.3))(eslint@9.39.4)
+      eslint-plugin-ember: 12.7.5(@babel/core@7.29.0)(@typescript-eslint/parser@8.38.0(eslint@9.39.4)(typescript@6.0.3))(eslint@9.39.4)(typescript@6.0.3)
       eslint-plugin-qunit: 8.2.6(eslint@9.39.4)
     transitivePeerDependencies:
       - '@types/eslint'
@@ -6665,7 +6671,7 @@ snapshots:
   '@npmcli/fs@1.1.1':
     dependencies:
       '@gar/promisify': 1.1.3
-      semver: 7.7.3
+      semver: 7.7.4
 
   '@npmcli/git@6.0.3':
     dependencies:
@@ -6675,7 +6681,7 @@ snapshots:
       npm-pick-manifest: 10.0.0
       proc-log: 5.0.0
       promise-retry: 2.0.1
-      semver: 7.7.3
+      semver: 7.7.4
       which: 5.0.0
 
   '@npmcli/move-file@1.1.2':
@@ -6690,7 +6696,7 @@ snapshots:
       hosted-git-info: 8.1.0
       json-parse-even-better-errors: 4.0.0
       proc-log: 5.0.0
-      semver: 7.7.3
+      semver: 7.7.4
       validate-npm-package-license: 3.0.4
 
   '@npmcli/promise-spawn@8.0.2':
@@ -7023,7 +7029,7 @@ snapshots:
 
   '@typescript-eslint/project-service@8.38.0(typescript@6.0.3)':
     dependencies:
-      '@typescript-eslint/tsconfig-utils': 8.38.0(typescript@6.0.3)
+      '@typescript-eslint/tsconfig-utils': 8.59.1(typescript@6.0.3)
       '@typescript-eslint/types': 8.38.0
       debug: 4.4.1
       typescript: 6.0.3
@@ -7036,6 +7042,10 @@ snapshots:
       '@typescript-eslint/visitor-keys': 8.38.0
 
   '@typescript-eslint/tsconfig-utils@8.38.0(typescript@6.0.3)':
+    dependencies:
+      typescript: 6.0.3
+
+  '@typescript-eslint/tsconfig-utils@8.59.1(typescript@6.0.3)':
     dependencies:
       typescript: 6.0.3
 
@@ -7063,7 +7073,7 @@ snapshots:
       fast-glob: 3.3.3
       is-glob: 4.0.3
       minimatch: 9.0.5
-      semver: 7.7.3
+      semver: 7.7.4
       ts-api-utils: 2.1.0(typescript@6.0.3)
       typescript: 6.0.3
     transitivePeerDependencies:
@@ -7334,7 +7344,7 @@ snapshots:
     dependencies:
       '@babel/core': 7.29.0
       babel-import-util: 2.1.1
-      semver: 7.7.3
+      semver: 7.7.4
 
   babel-plugin-ember-data-packages-polyfill@0.1.2:
     dependencies:
@@ -8082,7 +8092,7 @@ snapshots:
       ember-cli-version-checker: 5.1.2
       ensure-posix-path: 1.1.1
       resolve-package-path: 4.0.3
-      semver: 7.7.3
+      semver: 7.7.4
     transitivePeerDependencies:
       - supports-color
 
@@ -8118,16 +8128,17 @@ snapshots:
   ember-cli-version-checker@5.1.2:
     dependencies:
       resolve-package-path: 3.1.0
-      semver: 7.7.3
+      semver: 7.7.4
       silent-error: 1.1.1
     transitivePeerDependencies:
       - supports-color
 
-  ember-eslint-parser@0.5.10(@babel/core@7.29.0)(@typescript-eslint/parser@8.38.0(eslint@9.39.4)(typescript@6.0.3))(eslint@9.39.4):
+  ember-eslint-parser@0.5.13(@babel/core@7.29.0)(@typescript-eslint/parser@8.38.0(eslint@9.39.4)(typescript@6.0.3))(eslint@9.39.4)(typescript@6.0.3):
     dependencies:
       '@babel/core': 7.29.0
       '@babel/eslint-parser': 7.28.6(@babel/core@7.29.0)(eslint@9.39.4)
       '@glimmer/syntax': 0.95.0
+      '@typescript-eslint/tsconfig-utils': 8.59.1(typescript@6.0.3)
       content-tag: 2.0.3
       eslint-scope: 7.2.2
       html-tags: 3.3.1
@@ -8137,6 +8148,7 @@ snapshots:
       '@typescript-eslint/parser': 8.38.0(eslint@9.39.4)(typescript@6.0.3)
     transitivePeerDependencies:
       - eslint
+      - typescript
 
   ember-polaris-service@0.5.0:
     dependencies:
@@ -8191,7 +8203,7 @@ snapshots:
       inflection: 2.0.1
       route-recognizer: 0.3.4
       router_js: 8.0.6(route-recognizer@0.3.4)(rsvp@4.8.5)
-      semver: 7.7.3
+      semver: 7.7.4
       silent-error: 1.1.1
       simple-html-tokenizer: 0.5.11
     transitivePeerDependencies:
@@ -8302,7 +8314,7 @@ snapshots:
   eslint-compat-utils@0.5.1(eslint@9.39.4):
     dependencies:
       eslint: 9.39.4
-      semver: 7.7.3
+      semver: 7.7.4
 
   eslint-config-prettier@10.1.8(eslint@9.39.4):
     dependencies:
@@ -8343,11 +8355,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-ember@12.7.5(@babel/core@7.29.0)(@typescript-eslint/parser@8.38.0(eslint@9.39.4)(typescript@6.0.3))(eslint@9.39.4):
+  eslint-plugin-ember@12.7.5(@babel/core@7.29.0)(@typescript-eslint/parser@8.38.0(eslint@9.39.4)(typescript@6.0.3))(eslint@9.39.4)(typescript@6.0.3):
     dependencies:
       '@ember-data/rfc395-data': 0.0.4
       css-tree: 3.1.0
-      ember-eslint-parser: 0.5.10(@babel/core@7.29.0)(@typescript-eslint/parser@8.38.0(eslint@9.39.4)(typescript@6.0.3))(eslint@9.39.4)
+      ember-eslint-parser: 0.5.13(@babel/core@7.29.0)(@typescript-eslint/parser@8.38.0(eslint@9.39.4)(typescript@6.0.3))(eslint@9.39.4)(typescript@6.0.3)
       ember-rfc176-data: 0.3.18
       eslint: 9.39.4
       eslint-utils: 3.0.0(eslint@9.39.4)
@@ -8360,6 +8372,7 @@ snapshots:
       '@typescript-eslint/parser': 8.38.0(eslint@9.39.4)(typescript@6.0.3)
     transitivePeerDependencies:
       - '@babel/core'
+      - typescript
 
   eslint-plugin-es-x@7.8.0(eslint@9.39.4):
     dependencies:
@@ -8377,7 +8390,7 @@ snapshots:
       eslint-import-context: 0.1.9(unrs-resolver@1.11.1)
       is-glob: 4.0.3
       minimatch: 10.2.4
-      semver: 7.7.3
+      semver: 7.7.4
       stable-hash-x: 0.2.0
       unrs-resolver: 1.11.1
     optionalDependencies:
@@ -8400,7 +8413,7 @@ snapshots:
       globals: 15.15.0
       ignore: 5.3.2
       minimatch: 9.0.5
-      semver: 7.7.3
+      semver: 7.7.4
       ts-declaration-location: 1.0.7(typescript@6.0.3)
     transitivePeerDependencies:
       - typescript
@@ -8444,7 +8457,7 @@ snapshots:
       pluralize: 8.0.0
       regexp-tree: 0.1.27
       regjsparser: 0.13.0
-      semver: 7.7.3
+      semver: 7.7.4
       strip-indent: 4.1.1
 
   eslint-scope@5.1.1:
@@ -9223,7 +9236,7 @@ snapshots:
 
   is-bun-module@2.0.0:
     dependencies:
-      semver: 7.7.3
+      semver: 7.7.4
 
   is-core-module@2.16.1:
     dependencies:
@@ -9748,7 +9761,7 @@ snapshots:
     dependencies:
       growly: 1.3.0
       is-wsl: 2.2.0
-      semver: 7.7.3
+      semver: 7.7.4
       shellwords: 0.1.1
       uuid: 8.3.2
       which: 2.0.2
@@ -9761,7 +9774,7 @@ snapshots:
 
   npm-install-checks@7.1.1:
     dependencies:
-      semver: 7.7.3
+      semver: 7.7.4
 
   npm-normalize-package-bin@4.0.0: {}
 
@@ -9769,7 +9782,7 @@ snapshots:
     dependencies:
       hosted-git-info: 8.1.0
       proc-log: 5.0.0
-      semver: 7.7.3
+      semver: 7.7.4
       validate-npm-package-name: 6.0.2
 
   npm-pick-manifest@10.0.0:
@@ -9777,7 +9790,7 @@ snapshots:
       npm-install-checks: 7.1.1
       npm-normalize-package-bin: 4.0.0
       npm-package-arg: 12.0.2
-      semver: 7.7.3
+      semver: 7.7.4
 
   npm-run-path@4.0.1:
     dependencies:
@@ -9885,7 +9898,7 @@ snapshots:
       ky: 1.8.2
       registry-auth-token: 5.1.0
       registry-url: 6.0.1
-      semver: 7.7.3
+      semver: 7.7.4
 
   package-up@5.0.0:
     dependencies:
@@ -10137,7 +10150,7 @@ snapshots:
       js-yaml: 4.1.1
       latest-version: 9.0.0
       parse-github-repo-url: 1.4.1
-      semver: 7.7.3
+      semver: 7.7.4
       yargs: 17.7.2
     transitivePeerDependencies:
       - bluebird
@@ -10336,7 +10349,7 @@ snapshots:
 
   semver@6.3.1: {}
 
-  semver@7.7.3: {}
+  semver@7.7.4: {}
 
   send@0.18.0:
     dependencies:
@@ -10845,7 +10858,7 @@ snapshots:
 
   typescript-auto-import-cache@0.3.6:
     dependencies:
-      semver: 7.7.3
+      semver: 7.7.4
 
   typescript-eslint@8.38.0(eslint@9.39.4)(typescript@6.0.3):
     dependencies:
@@ -10978,7 +10991,7 @@ snapshots:
   volar-service-typescript@0.0.68(@volar/language-service@2.4.28):
     dependencies:
       path-browserify: 1.0.1
-      semver: 7.7.3
+      semver: 7.7.4
       typescript-auto-import-cache: 0.3.6
       vscode-languageserver-textdocument: 1.0.12
       vscode-nls: 5.2.0
