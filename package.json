@@ -69,7 +69,7 @@
     "@embroider/compat": "^4.1.21",
     "@embroider/core": "^4.6.2",
     "@embroider/vite": "^1.7.8",
-    "@glint/ember-tsc": "^1.8.11",
+    "@glint/ember-tsc": "^1.8.12",
     "@glint/template": "^1.7.8",
     "@gossi/config-eslint": "^1.3.2",
     "@gossi/config-prettier": "^1.2.0",
