@@ -109,7 +109,7 @@ importers:
         specifier: ^0.18.0
         version: 0.18.0
       rollup:
-        specifier: ^4.63.0
+        specifier: ^4.63.1
         version: 4.63.1
       testem:
         specifier: ^3.19.1
@@ -2117,6 +2117,7 @@ packages:
 
   charm@1.0.2:
     resolution: {integrity: sha512-wqW3VdPnlSWT4eRiYX+hcs+C6ViBPUWk1qTCd+37qw9kEm/a5n2qcyQDMBWvSYKN/ctqZzeXNQaeBjOetJJUkw==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   chownr@2.0.0:
     resolution: {integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==}
