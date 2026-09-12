@@ -46,13 +46,13 @@ importers:
         specifier: ^8.3.1
         version: 8.3.1(@glint/template@1.7.10)(rollup@4.63.1)
       '@embroider/compat':
-        specifier: ^4.1.22
+        specifier: ^4.1.23
         version: 4.1.23(@embroider/core@4.6.5(@glint/template@1.7.10))(@glint/template@1.7.10)
       '@embroider/core':
-        specifier: ^4.6.3
+        specifier: ^4.6.5
         version: 4.6.5(@glint/template@1.7.10)
       '@embroider/vite':
-        specifier: ^1.7.10
+        specifier: ^1.7.11
         version: 1.7.11(@embroider/core@4.6.5(@glint/template@1.7.10))(@glint/template@1.7.10)(vite@8.2.2(@types/node@24.1.0)(esbuild@0.27.2)(terser@5.43.1)(yaml@2.9.0))
       '@glint/ember-tsc':
         specifier: ^1.8.14
